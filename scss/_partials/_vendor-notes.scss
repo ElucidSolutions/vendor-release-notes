@@ -1,0 +1,154 @@
+/*_vendor-notes.scss */
+
+body{
+
+}
+
+#header{
+	text-align:center;
+	height: 227px;
+	background:#9b5703;background-image:url(../images/vrn-bg.jpg); 
+	background-repeat:no-repeat;background-position: 50% 25.5%; 
+	background-size:cover; 
+	margin: 0px auto;
+	width:100%;
+}
+
+#homepage-link{
+	color: $dark-blue;
+	font-weight:400;
+	margin-top:10px;
+	text-decoration:none;
+	font-size: $base-font-size*1.2;
+	display:inline-block;
+}
+#homepage-link:hover{
+	color:$red;
+}
+#title{
+	color: white;
+	margin-top:40px;	
+	font-size: $base-font-size*2;
+}
+
+#main-content{
+	background-color: $background-color;
+	padding: 0px;
+	text-align: left;
+}
+
+.release-section{
+	margin: 0px auto;
+	padding: 10px 0px 30px 0px;
+	width:80%;
+	
+}
+
+.release-section h2{
+	color: $red;
+	font-weight: 400;
+	font-size: $base-font-size*1.2;
+	font-style: italic;
+	margin: 10px 0px 5px 0px;
+}
+
+.bcr{
+	background:white;
+	margin: 0px auto 20px auto;
+	padding: 25px;
+
+}
+
+.bcr h2{
+	color: $blue;
+	display: inline-block;
+	width: 80%;
+	font-style:normal;
+	font-weight:400;
+	font-size: $base-font-size*1.4;
+}
+
+h2.system-tag{
+	content: "eOffer";
+	color: $text-color;
+	font-size: $base-font-size*1.4;
+	display:inline-block;
+	width:15%;
+	text-align:right;
+}
+.system-tag::after{
+	content: " "; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+.bcr h3{
+	color: $red;
+	font-style: italic;
+}
+
+.update{
+	font-weight: 300;
+	color: $red;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.bcr-question{
+	margin: 30px 0px 10px 0px;
+}
+
+.bcr p{
+	line-height:20px;
+	margin: 5px 0px 15px 0px;
+}
+
+
+
+/* Screenshot Styles */
+
+
+.figCaption {text-align:left; font-weight:600; color:#333; margin: 0; padding:0;}
+.clickTo{text-align:left; font-style:oblique; color:#ed1c24; margin: 0 0 1.5em 0; padding:0;}
+.middle img {margin: 0; padding: 0; max-width:100%;}
+
+
+
+.screenshotContainer{
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+}
+.screenshotBox {
+			text-align:left;
+			margin-left:auto;
+			margin-right:auto;
+			display:table;
+			min-width:280px;}
+.screenshotBox img{			
+			margin: 0 auto;
+			max-width:100%;
+			border: solid 1px #333;}
+.screenshotText {
+			display:table-caption;
+			caption-side:bottom;
+			padding:0px;
+			margin-top:10px;
+}
+
+
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.4;
+    position:fixed;
+    bottom:3%;
+    right:4%;
+    display:none;
+    text-indent:-9999px;
+    background:url(../images/icon_top.png) no-repeat;
+	z-index:1000;
+}

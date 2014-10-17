@@ -1,0 +1,276 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700");
+/* line 17, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* mixins.scss */
+/*_variables.scss */
+/* Body Text Styles */
+/*_typography.scss*/
+/* line 2, ../scss/_partials/_typography.scss */
+body {
+  color: #636363;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* line 10, ../scss/_partials/_typography.scss */
+.why, .how {
+  color: #ed1c24;
+}
+
+/*_vendor-notes.scss */
+/* line 7, ../scss/_partials/_vendor-notes.scss */
+#header {
+  text-align: center;
+  height: 227px;
+  background: #9b5703;
+  background-image: url(../images/vrn-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 25.5%;
+  background-size: cover;
+  margin: 0px auto;
+  width: 100%;
+}
+
+/* line 17, ../scss/_partials/_vendor-notes.scss */
+#homepage-link {
+  color: #02304a;
+  font-weight: 400;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 19.2px;
+  display: inline-block;
+}
+
+/* line 25, ../scss/_partials/_vendor-notes.scss */
+#homepage-link:hover {
+  color: #ed1c24;
+}
+
+/* line 28, ../scss/_partials/_vendor-notes.scss */
+#title {
+  color: white;
+  margin-top: 40px;
+  font-size: 32px;
+}
+
+/* line 34, ../scss/_partials/_vendor-notes.scss */
+#main-content {
+  background-color: #f9f5f2;
+  padding: 0px;
+  text-align: left;
+}
+
+/* line 40, ../scss/_partials/_vendor-notes.scss */
+.release-section {
+  margin: 0px auto;
+  padding: 10px 0px 30px 0px;
+  width: 80%;
+}
+
+/* line 47, ../scss/_partials/_vendor-notes.scss */
+.release-section h2 {
+  color: #ed1c24;
+  font-weight: 400;
+  font-size: 19.2px;
+  font-style: italic;
+  margin: 10px 0px 5px 0px;
+}
+
+/* line 55, ../scss/_partials/_vendor-notes.scss */
+.bcr {
+  background: white;
+  margin: 0px auto 20px auto;
+  padding: 25px;
+}
+
+/* line 62, ../scss/_partials/_vendor-notes.scss */
+.bcr h2 {
+  color: #1799e4;
+  display: inline-block;
+  width: 80%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.4px;
+}
+
+/* line 71, ../scss/_partials/_vendor-notes.scss */
+h2.system-tag {
+  content: "eOffer";
+  color: #636363;
+  font-size: 22.4px;
+  display: inline-block;
+  width: 15%;
+  text-align: right;
+}
+
+/* line 79, ../scss/_partials/_vendor-notes.scss */
+.system-tag::after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 86, ../scss/_partials/_vendor-notes.scss */
+.bcr h3 {
+  color: #ed1c24;
+  font-style: italic;
+}
+
+/* line 91, ../scss/_partials/_vendor-notes.scss */
+.update {
+  font-weight: 300;
+  color: #ed1c24;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* line 98, ../scss/_partials/_vendor-notes.scss */
+.bcr-question {
+  margin: 30px 0px 10px 0px;
+}
+
+/* line 102, ../scss/_partials/_vendor-notes.scss */
+.bcr p {
+  line-height: 20px;
+  margin: 5px 0px 15px 0px;
+}
+
+/* Screenshot Styles */
+/* line 112, ../scss/_partials/_vendor-notes.scss */
+.figCaption {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 113, ../scss/_partials/_vendor-notes.scss */
+.clickTo {
+  text-align: left;
+  font-style: oblique;
+  color: #ed1c24;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+
+/* line 114, ../scss/_partials/_vendor-notes.scss */
+.middle img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* line 118, ../scss/_partials/_vendor-notes.scss */
+.screenshotContainer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 125, ../scss/_partials/_vendor-notes.scss */
+.screenshotBox {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  min-width: 280px;
+}
+
+/* line 131, ../scss/_partials/_vendor-notes.scss */
+.screenshotBox img {
+  margin: 0 auto;
+  max-width: 100%;
+  border: solid 1px #333;
+}
+
+/* line 135, ../scss/_partials/_vendor-notes.scss */
+.screenshotText {
+  display: table-caption;
+  caption-side: bottom;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+/* line 143, ../scss/_partials/_vendor-notes.scss */
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  position: fixed;
+  bottom: 3%;
+  right: 4%;
+  display: none;
+  text-indent: -9999px;
+  background: url(../images/icon_top.png) no-repeat;
+  z-index: 1000;
+}
