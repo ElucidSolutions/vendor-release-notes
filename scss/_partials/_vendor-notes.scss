@@ -1,18 +1,28 @@
 /*_vendor-notes.scss */
 
 body{
-
 }
 
 ul{
 	list-style-type:disc;
 	li{margin: 0px 0px 10px 30px;}
-
 }
 
 em{
 	font-style:italic;
 }
+
+a{
+	color: $blue;
+	text-decoration:none;
+	font-weight:600;
+	transition:$color-transition;
+}
+a:hover{
+	color:$red;
+	transition:$color-transition;
+}
+
 
 #header{
 	text-align:center;
@@ -67,7 +77,7 @@ em{
 .release-section h2{
 	color: $red;
 	font-weight: 400;
-	font-size: $base-font-size*1.8;
+	font-size: $base-font-size*1.6;
 	font-style: italic;
 	margin: 10px 0px 5px 0px;
 }
@@ -132,9 +142,6 @@ h2.system-tag{
 
 .figCaption {text-align:left; font-weight:600; color:#333; margin: 0; padding:0;}
 .clickTo{text-align:left; font-style:oblique; color:#ed1c24; margin: 0 0 1.5em 0; padding:0;}
-.middle img {margin: 0; padding: 0; max-width:100%;}
-
-
 
 .screenshotContainer{
 			text-align:center;
@@ -151,7 +158,9 @@ h2.system-tag{
 			min-width:280px;}
 .screenshotBox img{			
 			margin: 0 auto;
-			max-width:100%;
+			max-width:100%; 
+			width:100%; 
+			height:auto;
 			border: solid 1px #333;}
 .screenshotText {
 			display:table-caption;
