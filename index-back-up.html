@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<base href=".">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="Shortcut Icon" href="images/favicon.ico"	type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>eOffer/eMod Release Notes</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+
+<script src="library/js/jquery-1.9.1.js"></script>
+
+ <!-- Fancybox main JS and CSS files -->
+<script type="text/javascript"
+	src="library/fancybox/source/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css"	href="library/fancybox/source/jquery.fancybox.css" media="screen" />
+
+<!-- Scroll to top JS -->
+ <script type="text/javascript">
+    $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+ 
+    });
+</script>
+
+
+</head>
+<body>
+	<div id="header">
+		<a href="http://eoffer.gsa.gov/" id="homepage-link">&#8592 Back to the eOffer/eMod Homepage</a>
+		<h1>eOffer/eMod <span> Release Notes</span></h1>
+	</div>
+	<div id="main-content">
+		<div class="release-section">
+			<h2>September 2014</h2>
+
+			<div class="bcr">
+				<h2 class="eOffer">Make &ldquo;Re-representation of Business Type&rdquo; Modification Visible At All times</h2><h2 class="system-tag">eMod</h2>
+				<div class="update">Update/Enhancement</div>
+				<h3 class="bcr-question">Why was this changed?</h3>
+				<p>In eMod, you, as a vendor, would only see the <strong><em>Re-representation of Business Type</em></strong> modification when there a change made to your vendor record in <a href="https://www.sam.gov/portal/SAM/">SAM</a>.  The original functinoary did not allow for all possible scenarios.  As a result, some vendors have had difficulty keeping their contracts-up-to-date.</p>
+				<h3 class="bcr-question">How does this affect eMod?</h3>
+				<p>eMod will now give you the option to initiate a Re-representation of Business Type modification at all times.  Options will be based upon your business’s records within SAM.  Vendors will also have the ability to request that a small business type be deleted.</p>
+				<p>Refer to the eOffer/eMod User Guide for more information on executing the <strong><em>Re-representation of Business Type</em></strong> modification.</p>
+
+				<!-- start screenshot -->
+				<div class="screenshotContainer">
+					<div class="screenshotBox">
+						<a class="fancybox" href="screenshots/1411/BCR001_01.jpg" title=" "> <img src="screenshots/1411/BCR001_01.jpg" alt="Note the System Access options on the right-hand side of the eOffer/eMod homepage." delegate="" button="" is="" class="screenshot" />	</a>
+						<div class="screenshotText">
+							<p class="figCaption">Note the System Access options on the right-hand side of the eOffer/eMod homepage.</p>
+							<p class="clickTo">Click the image to enlarge</p>
+						</div>
+					</div>
+				</div>
+				<!-- end screenshot -->
+
+				<p>Read more about this new process in the <a href="#">Relevant Section of the eOffer/eMod User Guide</a>.</p>
+			</div>
+
+
+
+		</div>
+	</div>
+
+	<a href="#" class="scrollup">Scroll</a>
+
+
+	<!-- Fancybox HelpGallery -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$("a.fancybox").fancybox({
+				transitionIn : 'elastic',
+				transitionOut : 'elastic',
+				speedIn : 600,
+				speedOut : 200,
+				overlayShow : false,
+				autoCenter : true,
+				autoResize : true,
+				closeClick : true,
+				beforeShow : function() {
+					var alt = this.element.find('img').attr('alt');
+					this.inner.find('img').attr('alt', alt);
+					this.title = alt;
+				},
+				titleShow : true,
+				padding : 0,
+				helpers : {
+					overlay : {
+						locked : false
+					}
+				}
+
+			});
+
+		});
+	</script>
+	<!-- make sure fancybox appears on top of sidr -->
+	<style>
+.fancybox-wrap {
+	z-index: 1000001;
+}
+
+.fancybox-overlay {
+	z-index: 1000000;
+}
+</style>
+
+	<!-- End Screenshot popups -->
+
+</body>
+</html>
+
