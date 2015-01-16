@@ -45,6 +45,7 @@ How To:
 
   1. Transfer this site to the new server directory.
   2. Update the baseURL variable in release.js to the new base URL.
+  3. Update the a#rss-link element in index.html to point to releases.rss.
 
 2. Add Releases:
 

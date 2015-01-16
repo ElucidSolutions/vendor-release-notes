@@ -19,6 +19,8 @@
 <script type="text/javascript" src="library/datejs/date.js"></script>
 
 <script type="text/javascript">
+  $('#rss-link').attr ('href', baseURL + rssPath);
+
   $(document).ready(function(){
     getReleases (releasesURL, function (releases) {
       releasesToDisplay = releases;
@@ -59,8 +61,7 @@
       <h2>Welcome to the eOffer/eMod Release Notes!</h2>
       <p>Here you will find the latest changes to both eOffer and eMod systems. Stay on top of the latest changes and learn about updates and enhancements to the system.</p>
       <p>Subscribe to the eOffer and eMod Release notes RSS feed to get the latest on updates to the system.
-        <!-- <a href="releases.rss"><img id="rss-icon" src="images/feed.png" alt="RSS Feed Icon"/></a>-->
-        <a href="http://parallel-threads.com/vendor-release-notes/releases.rss"><img id="rss-icon" src="images/feed.png" alt="RSS Feed Icon"/></a>
+        <a id="rss-link" href="http://www.elucidsolutions.com/projects/OAM/vendor-release-notes/releases.rss"><img id="rss-icon" src="images/feed.png" alt="RSS Feed Icon"/></a>
       </p>
     </div>
     <div id="filter-section">
