@@ -112,19 +112,21 @@ hr {
 			@include box-shadow(rgba(black, 0.4) 0px 1px 4px);
 			height: 3em;
 			padding: 0px $main-content-padding-left;
+			transition:$color-transition;
 		}
 		#display-all-releases.disabled {
 			@extend #display-all-releases;
 			color: grey;
+			cursor: not-allowed;
 			background-color: $light-grey;
 			@include box-shadow(rgba(black, 0) 0px 0px 0px);
 		}
 		select {
 			@extend h3;
 			height: 3em;
-			padding: 0px;
+			padding: 0px 0px 0px 1em;
 			margin: 0px $main-content-padding-left;
-			min-width: 10em;
+			min-width: 11em;
 		}
 	}
 	#releases-section {

@@ -76,11 +76,11 @@ a {
   color: #1799e4;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s ease; }
+  transition: color 1s ease; }
 
 a:hover {
   color: #ed1c24;
-  transition: color 0.2s ease; }
+  transition: color 1s ease; }
 
 a.disabled {
   color: #D7D7D7; }
@@ -153,18 +153,20 @@ hr {
       -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px;
       box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px;
       height: 3em;
-      padding: 0px 2%; }
+      padding: 0px 2%;
+      transition: color 1s ease; }
     #main-content #filter-section .disabled#display-all-releases {
       color: grey;
+      cursor: not-allowed;
       background-color: #D7D7D7;
       -moz-box-shadow: transparent 0px 0px 0px;
       -webkit-box-shadow: transparent 0px 0px 0px;
       box-shadow: transparent 0px 0px 0px; }
     #main-content #filter-section select {
       height: 3em;
-      padding: 0px;
+      padding: 0px 0px 0px 1em;
       margin: 0px 2%;
-      min-width: 10em; }
+      min-width: 11em; }
   #main-content #releases-section .release-header {
     padding: 1% 2%;
     background-color: #1799e4;
