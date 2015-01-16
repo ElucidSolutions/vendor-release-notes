@@ -19,8 +19,6 @@
 <script type="text/javascript" src="library/datejs/date.js"></script>
 
 <script type="text/javascript">
-  $('#rss-link').attr ('href', baseURL + rssPath);
-
   $(document).ready(function(){
     getReleases (releasesURL, function (releases) {
       releasesToDisplay = releases;
@@ -46,6 +44,8 @@
       $("html, body").animate({ scrollTop: 0 }, 600);
       return false;
     });
+
+    $('#rss-link').attr ('href', baseURL + rssPath);
   });
 </script>
 
