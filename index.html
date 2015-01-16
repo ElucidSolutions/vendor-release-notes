@@ -30,6 +30,8 @@
       sortDates (getReleaseDates (releases)).map (function (dateIndex, date) {
         $('select#filter-releases').append ($('<option></option>').attr ('value', date).text (date.toString ('MMMM yyyy')));
       });
+
+      deselectDateFilter ();
     });
 
     $(window).scroll(function(){
@@ -58,17 +60,18 @@
   </div>
   <div id="main-content">
     <div id="introduction">
-      <h2>Welcome to the eOffer/eMod Release Notes!</h2>
+      <h1>Welcome to the eOffer/eMod Release Notes!</h1>
       <p>Here you will find the latest changes to both eOffer and eMod systems. Stay on top of the latest changes and learn about updates and enhancements to the system.</p>
       <p>Subscribe to the eOffer and eMod Release notes RSS feed to get the latest on updates to the system.
-        <a id="rss-link" href="http://www.elucidsolutions.com/projects/OAM/vendor-release-notes/releases.rss"><img id="rss-icon" src="images/feed.png" alt="RSS Feed Icon"/></a>
+        <a id="rss-link" href="http://www.elucidsolutions.com/projects/OAM/vendor-release-notes/releases.rss"><img id="rss-icon" src="images/rss-icon.jpg" alt="RSS Feed Icon"/></a>
       </p>
     </div>
     <div id="filter-section">
       <h3>Filters:</h3>
-      <input id="display-all-releases" type="button" value="SHOW ALL CHANGES" />
+      <input id="display-all-releases" class="disabled" type="button" value="SHOW ALL CHANGES" title="All of the releases are displayed below."/>
       <h3>Filter System Changes By Month</h3>
       <select id="filter-releases">
+        <option hidden value=""></option>
       </select>
     </div>
     <div id="releases-section">

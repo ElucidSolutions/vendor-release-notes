@@ -157,7 +157,7 @@ function releasesToHTML (releases) {
       if (change.effect) {
         changeElement
           .append ($('<div></div>').addClass ('change-question change-effects')
-            .append ($('<h3></h3>').addClass ('change-effects-title').text ('How does this effect ' + change.system))
+            .append ($('<h3></h3>').addClass ('change-effects-title').text ('How does this effect ' + change.system + "?"))
             .append (change.effect.description));
 
         for (var imageIndex = 0; imageIndex < change.effect.images.length; imageIndex ++) {
@@ -232,12 +232,29 @@ function updateDisplay () {
   }
 }
 
+// Disable the Display All Releases button.
+function disableDisplayAllReleasesButton () {
+  $('#display-all-releases').addClass ('disabled').attr ('title', 'All of the releases are displayed below.');
+}
+
+// Enable the Display All Releases button.
+function enableDisplayAllReleasesButton () {
+    $('#display-all-releases').removeClass ('disabled').attr ('title', 'Click here to display all releases.');
+}
+
+// Deselect the date filter.
+function deselectDateFilter () {
+    $('#filter-releases').prop ('selectedIndex', -1);
+}
+
 // Displays all of the releases.
 function displayAllReleases () {
   getReleases (releasesURL, function (releases) {
     numReleasesToDisplay = defaultNumReleasesToDisplay;
     releasesToDisplay = releases;
     updateDisplay ();
+    disableDisplayAllReleasesButton ();
+    deselectDateFilter ();
   });
 }
 
@@ -252,6 +269,7 @@ function filterReleasesCallback () {
     numReleasesToDisplay = defaultNumReleasesToDisplay;
     releasesToDisplay = filterReleaseByDate (releases, date.getFullYear (), date.toString ('MMMM'));
     updateDisplay ();
+    enableDisplayAllReleasesButton ();
   });
 }
 

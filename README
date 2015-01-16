@@ -30,9 +30,9 @@ generate-rss.html and copy the generated RSS document to releases.rss.
 
 CSS stylesheets are generated using SASS in conjunction with the
 Bourbon SASS library. The SASS source files are stored in scss,
-specifically scss/styles.scss. The Compiled CSS file is stored in
-stylesheets/styles.css and is generated using Compass. The Compass
-configuration file is config.rb.
+specifically scss/_partials/styles.scss. The Compiled CSS file is
+stored in stylesheets/styles.css and is generated using Compass. The
+Compass configuration file is config.rb.
 
 Both index.html and generate-rss.html rely on releases.js which parses
 releases.xml, generates the RSS feed, defines the releases filter, etc.
