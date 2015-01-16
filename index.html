@@ -3,142 +3,128 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<link rel="Shortcut Icon" href="images/favicon.ico"	type="image/x-icon" />
+<link rel="Shortcut Icon" href="images/favicon.ico"  type="image/x-icon" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 <title>eOffer/eMod Release Notes</title>
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
 
 
 <script src="library/js/jquery-1.9.1.js"></script>
+<script src="releases.js"></script>
 
  <!-- Fancybox main JS and CSS files -->
-<script type="text/javascript"
-	src="library/fancybox/source/jquery.fancybox.js"></script>
-<link rel="stylesheet" type="text/css"	href="library/fancybox/source/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="library/fancybox/source/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css"  href="library/fancybox/source/jquery.fancybox.css" media="screen" />
 
-<!-- Scroll to top JS -->
- <script type="text/javascript">
-    $(document).ready(function(){ 
- 
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        }); 
- 
-        $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
- 
+<script type="text/javascript" src="library/datejs/date.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    getReleases (releasesURL, function (releases) {
+      releasesToDisplay = releases;
+
+      updateDisplay();
+
+      setHandlers ();
+
+      sortDates (getReleaseDates (releases)).map (function (dateIndex, date) {
+        $('select#filter-releases').append ($('<option></option>').attr ('value', date).text (date.toString ('MMMM yyyy')));
+      });
     });
+
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+      } else {
+        $('.scrollup').fadeOut();
+      }
+    }); 
+
+    $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  });
 </script>
 
 
 </head>
 <body>
-	<div id="header">
-		<a href="http://eoffer.gsa.gov/" id="homepage-link">&#8592 Back to the eOffer/eMod Homepage</a>
-		<h1>eOffer/eMod <span> Release Notes</span></h1>
-	</div>
-	<div id="main-content">
-		<div class="release-section">
-			<h2>September 2014</h2>
+  <div id="header">
+    <a href="http://eoffer.gsa.gov/" id="homepage-link">&#8592; Back to the eOffer/eMod Homepage</a>
+    <h1>eOffer/eMod <span> Release Notes</span></h1>
+  </div>
+  <div id="main-content">
+    <div id="introduction">
+      <h2>Welcome to the eOffer/eMod Release Notes!</h2>
+      <p>Here you will find the latest changes to both eOffer and eMod systems. Stay on top of the latest changes and learn about updates and enhancements to the system.</p>
+      <p>Subscribe to the eOffer and eMod Release notes RSS feed to get the latest on updates to the system.
+        <!-- <a href="releases.rss"><img id="rss-icon" src="images/feed.png" alt="RSS Feed Icon"/></a>-->
+        <a href="http://parallel-threads.com/vendor-release-notes/releases.rss"><img id="rss-icon" src="images/feed.png" alt="RSS Feed Icon"/></a>
+      </p>
+    </div>
+    <div id="filter-section">
+      <h3>Filters:</h3>
+      <input id="display-all-releases" type="button" value="SHOW ALL CHANGES" />
+      <h3>Filter System Changes By Month</h3>
+      <select id="filter-releases">
+      </select>
+    </div>
+    <div id="releases-section">
+      <p>Please Enable Javascript to see a list of recent releases</p>
+    </div>
+    <hr />
+    <div id="footer">
+      <a id='load-more-releases'>Load more release updates <span id='load-more-releases-icon'>[+]</span></a>
+    </div>
+  </div>
 
-			<div class="bcr">
-				<h2 class="bcr-title">Make &ldquo;Re-representation of Business Type&rdquo; Modification Visible At All times</h2><h2 class="system-tag">eMod</h2>
-				<div class="update">Update/Enhancement</div>
-				<h3 class="bcr-question">Why was this changed?</h3>
-				<p>In eMod, you, as a small business, would have only seen the <strong><em>Re-representation of Business Type</em></strong> modification when there was change made to your vendor record in <a href="https://www.sam.gov/portal/SAM/">SAM</a>.  The original functionoality did not allow for all possible scenarios.  As a result, some vendors have had difficulty keeping their contracts-up-to-date.</p>
-				<h3 class="bcr-question">How does this affect eMod?</h3>
-				<p>eMod will give small businesses the ability to initiate a Re-representation of Business Type modification at all times.  You may add any business type to your MAS contract that is associated with your DUNS number in SAM.  You may, however,remove any business type from your MAS contract.  Changes to your MAS contract will not update SAM.</p>
-				<p>It is extremely important to note that by to adding/removing business types at the contract level, it could cause a discrepancy in types in other systems. For example, if you, as a vendor, elect to make a change to the contract WITHOUT having made the same change in SAM, it is possible that the contract will display different business types from systems like GSA Advantage, eBuy, and eLibrary. </p>
-				<p>Also note that a business type may take 24-48 hours to appear in SAM.</p>
-				<p>Read the <strong><em>Re-representation of Business Type</em></strong> modification section in the eOffer/eMod User Guide for more information.<p>
-			</div>
-
-			<div class="bcr">
-				<h2 class="bcr-title">Enhance the eOffer &ldquo;Import&rdquo; Feature to Copy the CSP Data (Post Solicitation Refresh) </h2><h2 class="system-tag">eOffer</h2>
-				<div class="update">Update/Enhancement</div>
-				<h3 class="bcr-question">Why was this changed?</h3>
-				<p>When a you wish to create a new offer based off a withdrawn or rejected offer, the system gives you the ability to import information from the previous eOffer.  This feature did not previously extend to Commercial Sales Practice (CSP) data.</p>
-
-				<!-- start screenshot -->
-				<div class="screenshotContainer">
-					<div class="screenshotBox">
-						<a class="fancybox" href="screenshots/1411/BCR54149_01.jpg" title=" "> <img src="screenshots/1411/BCR54149_01.jpg" alt="This is the pre-population message you would see when creating an eOffer from an old rejected or withdrawn offer." delegate="" button="" is="" class="screenshot" />	</a>
-						<div class="screenshotText">
-							<p class="figCaption">This is the pre-population message you would see when creating an eOffer from an old rejected or withdrawn offer.</p>
-							<p class="clickTo">Click the image to enlarge</p>
-						</div>
-					</div>
-				</div>
-				<!-- end screenshot -->
-
-				<h3 class="bcr-question">How does this affect eMod?</h3>
-				<p>In re-populating your offer from a previously withdrawn or rejected offer, you will be importing your CSP data with the rest of the information.  It is always recommended to review the information in your offer prior to submission, especially in the case where you will be importing information from an older offer. <p>
-			</div>
-
-			<div class="bcr">
-				<h2 class="bcr-title">CSP Basis - Discount or Mark up / Build Out</h2><h2 class="system-tag">eOffer/eMod</h2>
-				<div class="update">Update/Enhancement</div>
-				<h3 class="bcr-question">Why was this changed?</h3>
-				<p>Previously, the Commercial Sales Practice (CSP) utility only allowed you, as a vendor, to express  offer or SIN level policies as discounts.  There was no way to capture policies on your CSP in terms of Mark Up/Build Out.</p>
-				<h3 class="bcr-question">How does this affect eOffer/eMod?</h3>
-				<p>Vendors may now express policies in terms of a mark up or a build out, in addition to a discount, to more accurately express their CSPs.  The vendors will be provided with the following description to help them make their decision:<ul><li><em>Based on a markup over cost (e.g. a 5% markup over the manufacturer's catalog price). This is common for dealer/resellers.  Your company is a dealer/reseller of widgets. The manufacturer catalog price that you pay for the widgets is $10 per widget. The price you are offering GSA is a 5% markup on the price you pay the manufacturer or $10.50.</em></li><li><em>Derived from a buildup of individual cost elements. Your proposed GSA price is derived by totaling the individual cost elements that it takes to produce your product or service, and then adding an amount for profit. Profit, or fee, is usually expressed as a percentage of the cost elements. Your GSA proposed price will typically be a reduced profit or fee applied to the cost elements (e.g. labor + general &amp; administrative + overheard + 5% profit = proposed GSA labor rate).</em></li></ul></p><p>Read the Commercial Sales Practice section in the eOffer/eMod User Guide for more information.</p>
-			</div>
-
-		</div>
-	</div>
-
-	<a href="#" class="scrollup">Scroll</a>
+  <a href="#" class="scrollup">Scroll</a>
 
 
-	<!-- Fancybox HelpGallery -->
+  <!-- Fancybox HelpGallery -->
 
-	<script type="text/javascript">
-		$(document).ready(function() {
+  <script type="text/javascript">
+    $(document).ready(function() {
 
-			$("a.fancybox").fancybox({
-				transitionIn : 'elastic',
-				transitionOut : 'elastic',
-				speedIn : 600,
-				speedOut : 200,
-				overlayShow : false,
-				autoCenter : true,
-				autoResize : true,
-				closeClick : true,
-				beforeShow : function() {
-					var alt = this.element.find('img').attr('alt');
-					this.inner.find('img').attr('alt', alt);
-					this.title = alt;
-				},
-				titleShow : true,
-				padding : 0,
-				helpers : {
-					overlay : {
-						locked : false
-					}
-				}
+      $("a.fancybox").fancybox({
+        transitionIn : 'elastic',
+        transitionOut : 'elastic',
+        speedIn : 600,
+        speedOut : 200,
+        overlayShow : false,
+        autoCenter : true,
+        autoResize : true,
+        closeClick : true,
+        beforeShow : function() {
+          var alt = this.element.find('img').attr('alt');
+          this.inner.find('img').attr('alt', alt);
+          this.title = alt;
+        },
+        titleShow : true,
+        padding : 0,
+        helpers : {
+          overlay : {
+            locked : false
+          }
+        }
 
-			});
+      });
 
-		});
-	</script>
-	<!-- make sure fancybox appears on top of sidr -->
-	<style>
+    });
+  </script>
+  <!-- make sure fancybox appears on top of sidr -->
+  <style>
 .fancybox-wrap {
-	z-index: 1000001;
+  z-index: 1000001;
 }
 
 .fancybox-overlay {
-	z-index: 1000000;
+  z-index: 1000000;
 }
 </style>
 
-	<!-- End Screenshot popups -->
+  <!-- End Screenshot popups -->
 
 </body>
 </html>

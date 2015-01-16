@@ -1,6 +1,16 @@
 /*_vendor-notes.scss */
 
+$light-grey: #D7D7D7;
+
+$main-content-padding-left: 2%;
+$main-content-padding-top: 1%;
+
+@mixin main-content-padding () {
+  padding: $main-content-padding-top $main-content-padding-left;
+}
+
 body{
+	background-color: $background-color;
 }
 
 ul{
@@ -22,7 +32,20 @@ a:hover{
 	color:$red;
 	transition:$color-transition;
 }
+a.disabled {
+	color: $light-grey;
+}
 
+hr {
+	background-color: $light-grey;
+	border: none;
+	height: 1px;
+}
+
+#rss-icon {
+	vertical-align: middle;
+	padding-left: .5em;
+}
 
 #header{
 	text-align:center;
@@ -36,13 +59,6 @@ a:hover{
 	color: white;
 	margin-top:40px;	
 	font-size: $base-font-size*2;
-	@include text-shadow(rgba(black, 1) 0px 1px 4px);
-	
-		span{
-			font-style:italic;
-			font-weight: 300;
-		}
-
 	}
 }
 
@@ -62,40 +78,75 @@ a:hover{
 
 
 #main-content{
-	background-color: $background-color;
-	padding: 0px;
-	text-align: left;
-}
-
-.release-section{
-	margin: 0px auto;
-	padding: 10px 0px 30px 0px;
-	width:80%;
-	
-}
-
-.release-section h2{
-	color: $red;
-	font-weight: 400;
-	font-size: $base-font-size*1.6;
-	font-style: italic;
-	margin: 10px 0px 5px 0px;
-}
-
-.bcr{
 	background:white;
-	margin: 0px auto 20px auto;
-	padding: 10px 25px;
+	margin: -4em auto $main-content-padding-left auto;
+        width: 80%;
 	@include box-shadow(rgba(black, 0.4) 0px 1px 4px);
-}
+	h2{
+		color: $blue;
+		display: inline-block;
+		font-style:normal;
+		font-weight:400;
+		font-size: $base-font-size*1.4;
+	}
+	#introduction {
+		@include main-content-padding ();
+		h2 {
+			padding-bottom: 1em;
+		}
+		p {
+			padding-bottom: 1em;
+		}
+	}
+	#filter-section {
+		@include main-content-padding ();
+		background-color: $background-color;
+		color: grey;
+		h3 {
+			@include main-content-padding;
+			display: inline;
+		}
+		input {
+			@extend h3;
+			background-color: $light-grey;
+		}
+		select {
+			@extend h3;
+		}
+	}
+	#releases-section {
+		.release-header {
+			@include main-content-padding ();
+			background-color: $blue;
+			color: white;
+			width: 100% - ($main-content-padding-left * 2);
+		}
+		.change {
+			@include main-content-padding ();
+			.change-system {
+				color: grey;
+				display: inline;
+				float: right;
+			}
+			.change-type {
+				color: $red;
+				font-style: italic;
+			}
 
-.bcr h2{
-	color: $blue;
-	display: inline-block;
-	width: 80%;
-	font-style:normal;
-	font-weight:400;
-	font-size: $base-font-size*1.4;
+		}
+	}
+	#footer {
+		@include main-content-padding ();
+		text-align: center;
+		width: 100%;
+		#load-more-releases {
+			font-size: $base-font-size * 1.4;
+			#load-more-releases-icon {
+				color: $red;
+			}
+		}
+
+	}
 }
 
 h2.system-tag{
@@ -114,7 +165,7 @@ h2.system-tag{
     height: 0; 
     clear: both;
 }
-.bcr h3{
+.change h3{
 	color: $red;
 	font-style: italic;
 }
@@ -126,11 +177,11 @@ h2.system-tag{
 	margin-bottom: 10px;
 }
 
-.bcr-question{
+.change-question{
 	margin: 30px 0px 10px 0px;
 }
 
-.bcr p{
+.change p{
 	line-height:20px;
 	margin: 5px 0px 15px 0px;
 }

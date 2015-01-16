@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Defines the Image List type which represents lists of embedded images. -->
+  <xs:complexType name="imageListType">
+    <xs:sequence>
+      <xs:element name="image" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="url" type="xs:anyURI"/>
+            <xs:element name="caption" type="xs:string"/>
+            <xs:element name="alternateText" type="xs:string"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Defines the section type that abstracts the motivation and effect elements. -->
+  <xs:complexType name="sectionType">
+    <xs:all>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="images" type="imageListType" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <!-- Defines the root element that represents the releases database. -->
+  <xs:element name="releases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="release" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="date" type="xs:date"/>
+              <xs:element name="changes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="change" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:all>
+                          <xs:element name="title" type="xs:string"/>
+                          <xs:element name="number" type="xs:decimal"/>
+                          <xs:element name="system">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="eOffer"/>
+                                <xs:enumeration value="eMod"/>
+                                <xs:enumeration value="eOffer/eMod"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="type" type="xs:string"/>
+                          <xs:element name="motivation" type="sectionType"/>
+                          <xs:element name="effect" type="sectionType"/>
+                        </xs:all>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

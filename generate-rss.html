@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Generate Release Notes RSS Feed</title>
+  <script src="library/js/jquery-1.9.1.js"></script>
+  <script src="library/datejs/date.js"></script>
+  <script src="releases.js"></script>
+  <script type="text/javascript">
+    $(document).ready (function () {
+      getReleases (releasesURL, function (releases) {
+        $('#snippet').text (releasesToRSS (releases));
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Generating the Release Notes RSS Feed File...</h1>
+  <p>This script generates the Release Notes RSS feed file. Once done, copy the XML document presented below and save it to the feed file.</p>
+  <code id='snippet'>
+    <p>Please Enable Javascript to see a list of recent releases</p>
+  </code>
+</body>
+</html>
