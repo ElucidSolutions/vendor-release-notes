@@ -65,7 +65,8 @@ body {
   background-color: #f9f5f2; }
 
 ul {
-  list-style-type: disc; }
+  list-style-type: disc;
+  margin-bottom:20px; }
   ul li {
     margin: 0px 0px 10px 30px; }
 
