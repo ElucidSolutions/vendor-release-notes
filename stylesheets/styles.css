@@ -147,6 +147,9 @@ hr {
     #main-content #filter-section h3, #main-content #filter-section #display-all-releases, #main-content #filter-section #display-all-releases.disabled, #main-content #filter-section select {
       padding: 1% 2%;
       display: inline; }
+    #display-all-releases{
+      cursor: pointer;
+    }
     #main-content #filter-section #display-all-releases, #main-content #filter-section #display-all-releases.disabled {
       color: white;
       background-color: #1799e4;

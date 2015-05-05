@@ -113,6 +113,7 @@ hr {
 			height: 3em;
 			padding: 0px $main-content-padding-left;
 			transition:$color-transition;
+			cursor: pointer;
 		}
 		#display-all-releases.disabled {
 			@extend #display-all-releases;
