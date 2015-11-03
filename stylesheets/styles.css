@@ -65,7 +65,8 @@ body {
   background-color: #f9f5f2; }
 
 ul {
-  list-style-type: disc; }
+  list-style-type: disc;
+  margin-bottom:20px; }
   ul li {
     margin: 0px 0px 10px 30px; }
 
@@ -146,6 +147,9 @@ hr {
     #main-content #filter-section h3, #main-content #filter-section #display-all-releases, #main-content #filter-section #display-all-releases.disabled, #main-content #filter-section select {
       padding: 1% 2%;
       display: inline; }
+    #display-all-releases{
+      cursor: pointer;
+    }
     #main-content #filter-section #display-all-releases, #main-content #filter-section #display-all-releases.disabled {
       color: white;
       background-color: #1799e4;
