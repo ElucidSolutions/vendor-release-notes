@@ -1,4 +1,71 @@
 <releases>
+    <release>
+    <date>2015-11-14</date>
+    <changes>
+      <change>
+        <title><![CDATA[Professional Services Schedule Consolidation]]></title>
+        <number>0</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>To ease procurement of professional services, all professional service schedules have been consolidated under the new Professional Services Schedule on October 1st.  The following GSA schedules have been consolidated into the new Professional Services Schedule on October 1st:</p><ul><li>MOBIS Schedule 874</li><li>PES Schedule 871</li><li>FABS Schedule 520</li><li>AIMS Schedule 541</li><li>LOGWORLD Schedule 874 V</li><li>Environmental Schedule 899</li><li>Language Schedule 738 II</li></ul>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Since the changes have taken place on October 1st, no action is needed by vendors since the change will be managed via a unilateral MassMod.</p><p>You can learn more about the Professional Services Schedule (PSS) on the <a href="https://interact.gsa.gov/groups/professionalservicescategory">Professional Service Category Community</a> on <a href="https://interact.gsa.gov/">Interact</a> or the PSS portal page, <a href="http://www.gsa.gov/portal/content/200063">Professional Service Schedule</a>.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title><![CDATA[Updated &ldquo;Help&rdquo; Links Throughout eOffer/eMod]]></title>
+        <number>1</number>
+        <system>eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>A new improved help center has been developed to assist users with eOffer/eMod.  The links throughout eOffer/eMod have been updated to remove old help content and send users to the new site.  </p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>View the new <a href="http://eoffer.gsa.gov/AMSupport/index.html">eOffer/eMod Help Center</a>.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title><![CDATA[SIN Deletions Now Go Into Effect Immediately]]></title>
+        <number>2</number>
+        <system>eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>Due to a policy change, a Delete SIN modification will go into effect immediately.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Vendors should be aware that Delete SIN modifications are effective immediately. 
+</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+    <release>
+    <date>2015-08-08</date>
+    <changes>
+      <change>
+        <title>Auto-split for Bundled Instantly Effective Price Reduction Modifications</title>
+        <number>0</number>
+        <system>eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>As of May 2015, temporary price reduction modifications and permanent price reduction modifications were enhanced to become effective immediate.  This includes the following mods:</p><ul><li>Temporary Price Reduction</li><li>Permanent Price Reduction (based on Most Favored Customers)</li><li>Permanent Price Reduction (Industry Partner Requested)</li></ul><p>However when these modifications were submitted with other modifications that were not designed to go into effect immediately, Contracting Officers had to manually separate these modifications.</p><p>The temporary and permanent price reduction modifications will not be automatically separated by eMod and will go into effect immediately.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>You should be aware that the following modifications will automatically receive an effective date that is identical to the date of submission:</p><ul><li>Temporary Price Reduction</li><li>Permanent Price Reduction (based on Most Favored Customers)</li><li>Permanent Price Reduction (Industry Partner Requested)</li></ul><p>Please note, you will still need to submit your price change via SIP/EDI in order for the change to be reflected on Advantage.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+    </changes>
+  </release>
   <release>
     <date>2015-05-09</date>
     <changes>
