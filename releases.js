@@ -157,7 +157,7 @@ function releasesToHTML (releases) {
       if (change.effect) {
         changeElement
           .append ($('<div></div>').addClass ('change-question change-effects')
-            .append ($('<h3></h3>').addClass ('change-effects-title').text ('How does this effect ' + change.system + "?"))
+            .append ($('<h3></h3>').addClass ('change-effects-title').text ('What must I do?'))
             .append (change.effect.description));
 
         for (var imageIndex = 0; imageIndex < change.effect.images.length; imageIndex ++) {
