@@ -29,22 +29,7 @@
           <images>            
           </images>
         </effect>
-      </change>
-      <change>
-        <title><![CDATA[SIN Deletions Now Go Into Effect Immediately]]></title>
-        <number>2</number>
-        <system>eMod</system>
-        <type>Update/Enhancement</type>
-        <motivation>
-          <description><![CDATA[<p>Due to a policy change, a Delete SIN modification will go into effect immediately.</p>]]></description>
-        </motivation>
-        <effect>
-          <description><![CDATA[<p>Vendors should be aware that Delete SIN modifications are effective immediately. 
-</p>]]></description>
-          <images>            
-          </images>
-        </effect>
-      </change>
+      </change>      
     </changes>
   </release>
     <release>
