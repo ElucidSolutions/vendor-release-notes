@@ -131,7 +131,7 @@ function releasesToHTML (releases) {
       var change = release.changes [index];
       var changeElement = $('<div></div>').addClass ('change')
             .append ($('<div></div>').addClass ('change-header')
-              .append ($('<h2></h2>').addClass ('change-title').text (change.title))
+              .append ($('<h2></h2>').addClass ('change-title').html (change.title))
               .append ($('<h2></h2>').addClass ('change-system').text (change.system)))
             .append ($('<div></div>').addClass ('change-type').text (change.type));
   
