@@ -29,7 +29,21 @@
           <images>            
           </images>
         </effect>
-      </change>      
+      </change>
+      <change>
+        <title><![CDATA[Duplicate Manufacturer Part Number Enhancement]]></title>
+        <number>2</number>
+        <system>Advantage</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>As of November 23, 2015, contractors can upload duplicate Manufacturer Part Numbers (MPNs) to GSA Advantage.  This enhancement will eliminate the need to manipulate the MPN when a contractor has items from multiple manufacturers that use the same MPN.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Contract holders should take this opportunity to review and update their price lists for both accuracy and completeness.  Any altered Manufacturer Part Numbers should be updated so as to be identical to the numbers issued by the manufacturer.</p><p>Per clauses I-FSS-600 Contract Price Lists and 552.238-71 (Submission and Distribution of Authorized FSS Schedule Price Lists), price lists must be complete, and include all supplies, prices, and terms and conditions awarded under a contractor’s FSS contract.   A complete price list means that all awarded base products are listed along with all associated descriptive data (to include MPN).</p><p>Going forward you should ensure that correct manufacturer part numbers are submitted for all products in your price list.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>       
     </changes>
   </release>
     <release>
