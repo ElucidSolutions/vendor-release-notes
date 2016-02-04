@@ -26,27 +26,27 @@ function parseReleases (releasesDocument) {
       'date': Date.parse ($('date', releaseElement).text ()),
       'changes': $('changes', releaseElement).children ('change').map (function (changeIndex, changeElement) {
         return {
-          'title':      $('title', changeElement).text (),
+          'title':      $('title', changeElement).html (),
           'number':     $('number', changeElement).text (),  
           'system':     $('system', changeElement).text (),
           'type':       $('type', changeElement).text (),
           'motivation': {
-            'description': $('motivation > description', changeElement).text (),
+            'description': $('motivation > description', changeElement).html (),
             'images':      $('motivation > images', changeElement).children ('image').map (function (imageIndex, imageElement) {
               return {
                 'url':           $('url', imageElement).text (),
-                'caption':       $('caption', imageElement).text (),
-                'alternateText': $('alternateText', imageElement).text ()
+                'caption':       $('caption', imageElement).html (),
+                'alternateText': $('alternateText', imageElement).html ()
               };
             })
           },
           'effect': {
-            'description': $('effect > description', changeElement).text (),
+            'description': $('effect > description', changeElement).html (),
             'images':      $('effect > images', changeElement).children ('image').map (function (imageIndex, imageElement) {
               return {
                 'url':           $('url', imageElement).text (),
-                'caption':       $('caption', imageElement).text (),
-                'alternateText': $('alternateText', imageElement).text ()
+                'caption':       $('caption', imageElement).html (),
+                'alternateText': $('alternateText', imageElement).html ()
               };
             })
           }
@@ -65,6 +65,7 @@ function parseReleases (releasesDocument) {
 */
 function getReleases (url, continuation) {
   $.ajax (url, {
+    dataType: 'xml',
     success: function (releasesDocument) {
       continuation (parseReleases (releasesDocument));
     },
