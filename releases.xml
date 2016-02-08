@@ -1,14 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
 <releases>
     <release>
-    <date>2015-11-14</date>
+    <date>2016-02-13</date>
     <changes>
       <change>
-        <title><![CDATA[Professional Services Schedule Consolidation]]></title>
+        <title>Capture the Vendor Response(s) for Each Clause in Offers and in Mods</title>
         <number>0</number>
         <system>eOffer/eMod</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>To ease procurement of professional services, all professional service schedules have been consolidated under the new Professional Services Schedule on October 1st.  The following GSA schedules have been consolidated into the new Professional Services Schedule on October 1st:</p><ul><li>MOBIS Schedule 874</li><li>PES Schedule 871</li><li>FABS Schedule 520</li><li>AIMS Schedule 541</li><li>LOGWORLD Schedule 874 V</li><li>Environmental Schedule 899</li><li>Language Schedule 738 II</li></ul>]]></description>
+          <description><![CDATA[<p>Previously, the <em>Solicitation Clauses</em> section of eOffer/eMod only consisted of one screen that captured a limited amount of data. That section has been updated with new functionality for more detailed responding, which is tailored to your schedule, so that your offer will be managed more intelligently.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Visit the new <em>Responding to Solicitation Clauses</em> section of the updated eOffer/eMod user guides.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Mass Mod for PSS</title>
+        <number>1</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>The Professional Service Schedule was added on October 1, 2015. This schedule was being populated with C SINs rather than the correct non-C equivalent.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that you will no longer see the C SINs, but only their non-C equivalent.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Streamlined Offers and Configurable Year Thresholds</title>
+        <number>2</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>The number of MAS contractors coming up on their 20-year maximum contract lifespans will increase rapidly over the next few years. Policy and Administration wanted to streamline the offer process for contractors who have had a successful contract period, by exempting repeat “legacy” contractors from some of the requirements associated with submitting a new MAS offer.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Qualified contractors will be able to submit an offer without the Pathways to Success Training, the Readiness Assessment, and certain sections of the Technical proposal.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>       
+    </changes>
+  </release>
+    <release>
+    <date>2015-11-14</date>
+    <changes>
+      <change>
+        <title>Professional Services Schedule Consolidation</title>
+        <number>0</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>To ease procurement of professional services, all professional service schedules have been consolidated under the new Professional Services Schedule on October 1st. The following GSA schedules have been consolidated into the new Professional Services Schedule on October 1st:</p><ul><li>MOBIS Schedule 874</li><li>PES Schedule 871</li><li>FABS Schedule 520</li><li>AIMS Schedule 541</li><li>LOGWORLD Schedule 874 V</li><li>Environmental Schedule 899</li><li>Language Schedule 738 II</li></ul>]]></description>
         </motivation>
         <effect>
           <description><![CDATA[<p>Since the changes have taken place on October 1st, no action is needed by vendors since the change will be managed via a unilateral MassMod.</p><p>You can learn more about the Professional Services Schedule (PSS) on the <a href="https://interact.gsa.gov/groups/professionalservicescategory">Professional Service Category Community</a> on <a href="https://interact.gsa.gov/">Interact</a> or the PSS portal page, <a href="http://www.gsa.gov/portal/content/200063">Professional Service Schedule</a>.</p>]]></description>
@@ -17,12 +65,12 @@
         </effect>
       </change>
       <change>
-        <title><![CDATA[Updated &ldquo;Help&rdquo; Links Throughout eOffer/eMod]]></title>
+        <title>Updated Help Links Throughout eOffer/eMod</title>
         <number>1</number>
         <system>eMod</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>A new improved help center has been developed to assist users with eOffer/eMod.  The links throughout eOffer/eMod have been updated to remove old help content and send users to the new site.  </p>]]></description>
+          <description><![CDATA[<p>A new improved help center has been developed to assist users with eOffer/eMod.  The links throughout eOffer/eMod have been updated to remove old help content and send users to the new site.</p>]]></description>
         </motivation>
         <effect>
           <description><![CDATA[<p>View the new <a href="http://eoffer.gsa.gov/AMSupport/index.html">eOffer/eMod Help Center</a>.</p>]]></description>
@@ -31,7 +79,7 @@
         </effect>
       </change>
       <change>
-        <title><![CDATA[Duplicate Manufacturer Part Number Enhancement]]></title>
+        <title>Duplicate Manufacturer Part Number Enhancement</title>
         <number>2</number>
         <system>Advantage</system>
         <type>Update/Enhancement</type>
@@ -39,7 +87,7 @@
           <description><![CDATA[<p>As of November 23, 2015, contractors can upload duplicate Manufacturer Part Numbers (MPNs) to GSA Advantage.  This enhancement will eliminate the need to manipulate the MPN when a contractor has items from multiple manufacturers that use the same MPN.</p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>Contract holders should take this opportunity to review and update their price lists for both accuracy and completeness.  Any altered Manufacturer Part Numbers should be updated so as to be identical to the numbers issued by the manufacturer.</p><p>Per clauses I-FSS-600 Contract Price Lists and 552.238-71 (Submission and Distribution of Authorized FSS Schedule Price Lists), price lists must be complete, and include all supplies, prices, and terms and conditions awarded under a contractor’s FSS contract.   A complete price list means that all awarded base products are listed along with all associated descriptive data (to include MPN).</p><p>Going forward you should ensure that correct manufacturer part numbers are submitted for all products in your price list.</p>]]></description>
+          <description><![CDATA[<p>Contract holders should take this opportunity to review and update their price lists for both accuracy and completeness.  Any altered Manufacturer Part Numbers should be updated so as to be identical to the numbers issued by the manufacturer.</p><p>Per clauses I-FSS-600 Contract Price Lists and 552.238-71 (Submission and Distribution of Authorized FSS Schedule Price Lists), price lists must be complete, and include all supplies, prices, and terms and conditions awarded under a contractor’s FSS contract. A complete price list means that all awarded base products are listed along with all associated descriptive data (to include MPN).</p><p>Going forward you should ensure that correct manufacturer part numbers are submitted for all products in your price list.</p>]]></description>
           <images>            
           </images>
         </effect>
@@ -77,7 +125,7 @@
           <description><![CDATA[<p>As a part of the eOffer, vendors have to submit a technical proposal, covering topics such as corporate experience, past performance, and quality control.  Prior to this update, vendors would have to compile this information in a separate document, and attach it to their offers.</p><p>GSA took the opportunity to standardize and streamline the process across the MAS program by creating electronic forms within the eOffer system.  This new robust format allows for increased simplicity, while preserving the commodity-specific elements of certain schedules/SINs.</p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>During the course of 2015, each solicitation in eOffer will include a new section, titled  &ldquo;solicitations provisions&rdquo;.  In this section, offerors will address provisions specific to each solicitation, and provide written detail about their corporate experience, past performance, and quality control.</p><p>Requirements of each section of the provisions are listed with the corresponding text entry boxes.  This ensures consistency and completeness from the vendors.  You must respond to all provisions listed in the table, before you may submit your offer.</p><p>The result is a more user-friendly system and standardized eOffer that Contracting Officers can process more efficiently. </p><p>More information on the Solicitation Provisions process can be found in the <em>eOffer Help Center</em>.</p>]]></description>
+          <description><![CDATA[<p>During the course of 2015, each solicitation in eOffer will include a new section, titled  &ldquo;solicitations provisions&rdquo;.  In this section, offerors will address provisions specific to each solicitation, and provide written detail about their corporate experience, past performance, and quality control.</p><p>Requirements of each section of the provisions are listed with the corresponding text entry boxes. This ensures consistency and completeness from the vendors. You must respond to all provisions listed in the table, before you may submit your offer.</p><p>The result is a more user-friendly system and standardized eOffer that Contracting Officers can process more efficiently. </p><p>More information on the Solicitation Provisions process can be found in the <em>eOffer Help Center</em>.</p>]]></description>
           <images>
             <image>
               <url>screenshots/1505/BCR57864_01.jpg</url>
@@ -93,10 +141,10 @@
         <system>eMod</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>In the past, vendors submitting temporary or permanent price reduction modifications would need to wait for the Contracting Officer to approve the  modification before the modification took effect.  In order to better suit the needs of industry, the process needed to be streamlined.  Therefore, it was decided that price reduction modifications would be effective immediately upon submission.</p>]]></description>          
+          <description><![CDATA[<p>In the past, vendors submitting temporary or permanent price reduction modifications would need to wait for the Contracting Officer to approve the  modification before the modification took effect. In order to better suit the needs of industry, the process needed to be streamlined.  Therefore, it was decided that price reduction modifications would be effective immediately upon submission.</p>]]></description>          
         </motivation>
         <effect>
-          <description><![CDATA[<p>The following modifications will automatically receive an effective date that is identical to the date of submission:</p><ul><li>Temporary Price Reduction</li><li>Permanent Price Reduction (based on Most Favored Customer)</li><li>Permanent Price Reduction (Industry Partner Request)</li></ul><p>In submitting these modifications, you are now required to agree to the following statements:</p><ul><li>This modification is allowed ONLY to reflect price reductions to be applied to the awarded items under my Multiple Award Schedule contract.  No other changes can be included, and all other contract terms and conditions remain in full effect.</li><li>Submitted price reduction modifications are effective immediately upon submission.</li><li>I must update my Authorized Federal Supply Schedule Price List as soon as possible to reflect the price reductions described herein.</li></ul><p>Please note, you will still need to submit your price change via SIP/EDI in order for the change to be reflected on Advantage.</p>]]></description>
+          <description><![CDATA[<p>The following modifications will automatically receive an effective date that is identical to the date of submission:</p><ul><li>Temporary Price Reduction</li><li>Permanent Price Reduction (based on Most Favored Customer)</li><li>Permanent Price Reduction (Industry Partner Request)</li></ul><p>In submitting these modifications, you are now required to agree to the following statements:</p><ul><li>This modification is allowed ONLY to reflect price reductions to be applied to the awarded items under my Multiple Award Schedule contract. No other changes can be included, and all other contract terms and conditions remain in full effect.</li><li>Submitted price reduction modifications are effective immediately upon submission.</li><li>I must update my Authorized Federal Supply Schedule Price List as soon as possible to reflect the price reductions described herein.</li></ul><p>Please note, you will still need to submit your price change via SIP/EDI in order for the change to be reflected on Advantage.</p>]]></description>
           <images>
             <image>
               <url>screenshots/1505/BCR69361_01.jpg</url>
