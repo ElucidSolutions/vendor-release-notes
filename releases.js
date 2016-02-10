@@ -26,27 +26,27 @@ function parseReleases (releasesDocument) {
       'date': Date.parse ($('date', releaseElement).text ()),
       'changes': $('changes', releaseElement).children ('change').map (function (changeIndex, changeElement) {
         return {
-          'title':      $('title', changeElement).html (),
+          'title':      $('title', changeElement).text (),
           'number':     $('number', changeElement).text (),  
           'system':     $('system', changeElement).text (),
           'type':       $('type', changeElement).text (),
           'motivation': {
-            'description': $('motivation > description', changeElement).html (),
+            'description': $('motivation > description', changeElement).text (),
             'images':      $('motivation > images', changeElement).children ('image').map (function (imageIndex, imageElement) {
               return {
                 'url':           $('url', imageElement).text (),
-                'caption':       $('caption', imageElement).html (),
-                'alternateText': $('alternateText', imageElement).html ()
+                'caption':       $('caption', imageElement).text (),
+                'alternateText': $('alternateText', imageElement).text ()
               };
             })
           },
           'effect': {
-            'description': $('effect > description', changeElement).html (),
+            'description': $('effect > description', changeElement).text (),
             'images':      $('effect > images', changeElement).children ('image').map (function (imageIndex, imageElement) {
               return {
                 'url':           $('url', imageElement).text (),
-                'caption':       $('caption', imageElement).html (),
-                'alternateText': $('alternateText', imageElement).html ()
+                'caption':       $('caption', imageElement).text (),
+                'alternateText': $('alternateText', imageElement).text ()
               };
             })
           }
