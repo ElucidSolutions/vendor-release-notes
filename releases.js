@@ -65,6 +65,7 @@ function parseReleases (releasesDocument) {
 */
 function getReleases (url, continuation) {
   $.ajax (url, {
+    dataType: 'xml',
     success: function (releasesDocument) {
       continuation (parseReleases (releasesDocument));
     },
@@ -131,7 +132,7 @@ function releasesToHTML (releases) {
       var change = release.changes [index];
       var changeElement = $('<div></div>').addClass ('change')
             .append ($('<div></div>').addClass ('change-header')
-              .append ($('<h2></h2>').addClass ('change-title').text (change.title))
+              .append ($('<h2></h2>').addClass ('change-title').html (change.title))
               .append ($('<h2></h2>').addClass ('change-system').text (change.system)))
             .append ($('<div></div>').addClass ('change-type').text (change.type));
   
@@ -157,7 +158,7 @@ function releasesToHTML (releases) {
       if (change.effect) {
         changeElement
           .append ($('<div></div>').addClass ('change-question change-effects')
-            .append ($('<h3></h3>').addClass ('change-effects-title').text ('How does this effect ' + change.system + "?"))
+            .append ($('<h3></h3>').addClass ('change-effects-title').text ('What must I do?'))
             .append (change.effect.description));
 
         for (var imageIndex = 0; imageIndex < change.effect.images.length; imageIndex ++) {
