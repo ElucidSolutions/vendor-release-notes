@@ -26,8 +26,8 @@
           <description><![CDATA[<p>Previously, the Industrial Funding Fee Point of Contact (IFF POC) was only required for offerors completing a subcontracting plan.  </p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>Be aware that the <em>Industrial Funding Fee POC</em> is now a mandatory POC for all offers, and that multiple entries are permitted. Existing vendors can add this Point of Contact with a modification.</p>
-          <p>Note that this POC will be pre-populated with the information of the person listed as the 72A POC; you will need to validate this information. In addition, these new POCs may need their own digital certificates. </p>]]></description>
+          <description><![CDATA[<p>Be aware that the <em>Industrial Funding Fee POC</em> is now a mandatory POC for all offers, and that multiple entries are permitted. Existing vendors can manage this Point of Contact through a new modification time being introduced.</p>
+          <p>For existing contract holders, this POC will be pre-populated with the information of the person listed as the 72A POC;. You will need to validate and/or update this information if you wish to designate a different individual. In addition, these new POCs may need their own digital certificates in order to access eOffer/eMod.</p>]]></description>
           <images>            
           </images>
         </effect>
@@ -38,12 +38,12 @@
         <system>eOffer/eMod</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>Previously, the process for entering product-related information did not capture the most comprehensive picture of your offer. A process was needed to obtain the most detailed data so that COs could more accurately evaluate offers.</p>]]></description>
+          <description><![CDATA[<p>The Formatted Product Tool introduces a new, more comprehensive interface for offerors and existing contract holders to input data about their products. The process will allow for additional review and validation, resulting in cleaner and more accurate product data across the schedules program.</p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>The Formatted Product Tool will be rolled out to select schedules over the course of the next few months.  Contract holders under affected schedules will receive a mass mod.  If you are part of an affected schedule, you will receive a mass mod.  Upon accepting the mass mod, you will have access to the new process, and will be able to enter detailed pricing information for each of your products and accessories, including discounts, warranties, delivery options, and more. The tool also streamlines multiple sections of eOffer/eMod.</p>
-          <p>You will find both interactive training and step-by-step instructions on the Formatted Product Tool in the eOffer/eMod User Guide.</p>
-          <p>Information about the Formatted Product Tool rollout can be found on the MAS Interact group located at: <a href="https://interact.gsa.gov/groups/multiple-award-schedules">https://interact.gsa.gov/groups/multiple-award-schedules</a>.</p>]]></description>
+          <description><![CDATA[<p>The Formatted Product Tool will be rolled out to select schedules over the course of the next few months. If you are have a contract under a participating schedule, you will receive a mass mod for that contract. Upon accepting the mass mod, you will have access to the new process, and will be able to enter detailed pricing information for each of your products and accessories, including discounts, warranties, delivery options, and more. The tool also streamlines multiple sections of eOffer/eMod.</p>
+          <p>You will find both interactive training and step-by-step instructions on the Formatted Product Tool in the <a href="">eOffer/eMod User Guide</a>.</p>
+          <p>For the most up to date information about the Formatted Product Tool rollout, please visit the MAS Interact group located at: <a href="https://interact.gsa.gov/groups/multiple-award-schedules">https://interact.gsa.gov/groups/multiple-award-schedules</a>.</p>]]></description>
           <images>            
           </images>
         </effect>
