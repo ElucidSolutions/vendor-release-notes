@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
+    <release>
+    <date>2017-02-18</date>
+    <changes>
+      <change>
+        <title>Updates to Formatted Products Tool (FPT) for Schedules 58I and 72 Only</title>
+        <number>0</number>
+        <system>eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>A process was required to give vendors the capability to comment on standardized XSB data and note when they wanted to keep the original information.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that vendors can now add comments if they do not agree with the standardized XSB data returned while processing an &ldquo;Add Product,&rdquo; &ldquo;Add SIN,&rdquo; or &ldquo;Capture Formatted Pricing&rdquo; modification. The CO can either agree or disagree with the vendor’s request.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+    </changes>
+  </release> 
   <release>
     <date>2016-08-20</date>
     <changes>
