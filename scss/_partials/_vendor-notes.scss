@@ -2,38 +2,51 @@
 
 $light-grey: #D7D7D7;
 
-$main-content-padding-left: 2%;
+$main-content-padding-left: 15px;
 $main-content-padding-top: 1%;
+
+@mixin box-shadow ($shadow) {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+  -ms-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+  -o-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+}
 
 @mixin main-content-padding () {
   padding: $main-content-padding-top $main-content-padding-left;
 }
 
-body{
+body {
 	background-color: $background-color;
 }
 
-ul{
+ul {
 	list-style-type:disc;
-	li{margin: 0px 0px 10px 30px;}
+
+	li {
+		margin: 0px 0px 10px 30px;
+	}
 }
 
-em{
+em {
 	font-style:italic;
 }
 
-a{
+a {
 	color: $blue;
+	cursor: pointer;
 	text-decoration:none;
 	font-weight:600;
 	transition:$color-transition;
 }
-a:hover{
+a:hover {
 	color:$red;
 	transition:$color-transition;
 }
 a.disabled {
 	color: $light-grey;
+	cursor: default;
 }
 
 hr {
@@ -43,42 +56,54 @@ hr {
 }
 
 #rss-icon {
-	vertical-align: middle;
 	padding-left: .5em;
+	vertical-align: middle;
 }
 
-#header{
-	text-align:center;
-	height: 227px;
-	background:#9b5703;background-image:url(../images/vrn-bg.jpg); 
+#header {
+	background: #9b5703;
+	background-image:url(../images/vrn-bg.jpg); 
 	background-repeat:no-repeat;background-position: 50% 30%; 
-	background-size:cover; 
+	background-size:cover; 	
+	height: 227px;
 	margin: 0px auto;
+	text-align: center;
 	width:100%;
-	h1{
+
+	h1 {
 		color: white;
-		margin-top:40px;	
 		font-size: $base-font-size*2;
+		margin: 30px auto 0;	
+		padding: 0 20px;
 	}
-	#homepage-link{
+	#homepage-link {
 		color: white;
 		font-weight:400;
-		margin-top:10px;
+		margin: 10px auto 0;	
 		text-decoration:none;
 		font-size: $base-font-size*1.2;
 		display:inline-block;
+		padding: 0 20px;
 	}
 	#homepage-link:hover{
-		color:$red;
+		color: $red;
 	}
 }
 
 #main-content{
 	background:white;
+	padding: 0 15px;
 	margin: -4em auto $main-content-padding-left auto;
-        width: 80%;
+  width: 80%;
 	max-width: 1100px;
 	@include box-shadow(rgba(black, 0.4) 0px 1px 4px);
+
+	@media (max-width: 600px) {
+		margin-top: -3em;
+	}
+	@media (max-width: 450px) {
+		margin-top: -1em;
+	}
 	h2{
 		color: $blue;
 		display: inline-block;
@@ -104,6 +129,10 @@ hr {
 		h3 {
 			@include main-content-padding;
 			display: inline;
+		}
+		input {
+			@include box-shadow(none);
+			border: none;
 		}
 		#display-all-releases {
 			@extend h3;
@@ -136,13 +165,16 @@ hr {
 			background-color: $blue;
 			color: white;
 			font-style: italic;
-			width: 100% - ($main-content-padding-left * 2);
+			width: 100% - calc(#{$main-content-padding-left}  * 2);
 		}
 		.change {
 			@include main-content-padding ();
 			.change-header {
 				h2 {
-					font-weight: 100
+					font-weight: 100;
+				}
+				.change-title {
+					max-width: calc(100% - 150px);;
 				}
 				.change-system {
 					color: grey;
