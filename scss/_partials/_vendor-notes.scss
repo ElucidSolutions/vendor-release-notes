@@ -1,12 +1,5 @@
 /*_vendor-notes.scss */
 
-$light-grey: #D7D7D7;
-
-$main-content-padding-left: 15px;
-$main-content-padding-top: 1%;
-
-$body-padding: 20px;
-
 @mixin box-shadow ($shadow) {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
   -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
@@ -31,10 +24,6 @@ ul {
 		margin: 0px 0px 10px 30px;
 	}
 }
-
-/*em {
-	font-style: italic;
-}*/
 
 a {
 	color: $blue;
@@ -77,7 +66,6 @@ hr {
 
 	h1 {
 		color: white;
-		/*font-size: $base-font-size*2;*/
 		font-size: 2rem;
 		margin: 30px auto 0;	
 		padding: 0 $body-padding;
@@ -91,7 +79,7 @@ hr {
 		padding: 0 $body-padding;
 		text-decoration:none;
 
-		&:hover{
+		&:hover {
 			color: $red;
 		}
 	}
@@ -117,6 +105,7 @@ hr {
 	}
 	#introduction {
 		@include main-content-padding ();
+
 		h1 {
 			@extend h2;
 			font-size: $base-font-size * 2;
@@ -135,7 +124,6 @@ hr {
 			display: inline;
 		}
 		h3 {
-			/*@include main-content-padding;*/
 			display: inline;
 			padding-right: 5px;
 		}
@@ -151,7 +139,6 @@ hr {
 			color: white;
 			cursor: pointer;
 			height: 3em;
-			/*padding: 0px $main-content-padding-left;*/
 			transition: $color-transition;
 		}
 		#display-all-releases.disabled {
@@ -164,7 +151,6 @@ hr {
 		select {
 			@extend h3;
 			height: 3em;
-			/*margin: 0px $main-content-padding-left;*/
 			min-width: 11em;
 			padding: 0px 0px 0px 1em;			
 		}
@@ -228,26 +214,6 @@ hr {
 	}
 }
 
-@media (max-width: 600px) {
-	#main-content {
-		margin: -3em auto 0;
-		width: 90%;
-
-		#releases-section .change .change-header {
-			.change-title {
-				display: block;
-				margin-bottom: 0;
-				max-width: 100%;
-			}
-			.change-system {
-				display: block;
-				float: none;
-				margin: 10px 0;
-			}
-		}
-	}
-}
-
 h2.system-tag {
 	color: $text-color;
 	content: "eOffer";
@@ -258,11 +224,11 @@ h2.system-tag {
 	float: right;
 }
 .system-tag:after {
-		content: ""; 
-    visibility: hidden; 
-    display: block; 
-    height: 0; 
-    clear: both;
+  clear: both;
+	content: ""; 
+  display: block; 
+  height: 0; 
+  visibility: hidden;
 }
 .change h3 {
 	color: $red;
@@ -274,7 +240,6 @@ h2.system-tag {
 	font-weight: 300;	
 	margin-bottom: 10px;
 }
-
 .change-question {
 	margin: 30px 0px 10px 0px;
 }
@@ -285,7 +250,6 @@ h2.system-tag {
 }
 
 /* Screenshot Styles */
-
 
 .figCaption {
 	color: #333; 
@@ -301,7 +265,6 @@ h2.system-tag {
 	padding: 0;
 	text-align: left;
 }
-
 .screenshotContainer {
 	margin: 30px auto;
 	max-width: 100%;
@@ -341,6 +304,8 @@ h2.system-tag {
 	z-index: 1000;
 }
 
+/* Screenshot Modal Styles */
+
 .fancybox-wrap .fancybox-title {
 	top: calc(100% + 10px);
 	width: calc(100% - #{$body-padding} * 2);
@@ -348,5 +313,25 @@ h2.system-tag {
 	.child {
 		max-width: 100%;
 		white-space: initial;
+	}
+}
+
+@media (max-width: 600px) {
+	#main-content {
+		margin: -3em auto 0;
+		width: 90%;
+
+		#releases-section .change .change-header {
+			.change-title {
+				display: block;
+				margin-bottom: 0;
+				max-width: 100%;
+			}
+			.change-system {
+				display: block;
+				float: none;
+				margin: 10px 0;
+			}
+		}
 	}
 }

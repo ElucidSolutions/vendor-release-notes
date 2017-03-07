@@ -25,9 +25,6 @@ ul {
   ul li {
     margin: 0px 0px 10px 30px; }
 
-/*em {
-	font-style: italic;
-}*/
 a {
   color: #1799e4;
   cursor: pointer;
@@ -62,7 +59,6 @@ hr {
   width: 100%; }
   #header h1 {
     color: white;
-    /*font-size: $base-font-size*2;*/
     font-size: 2rem;
     margin: 30px auto 0;
     padding: 0 20px; }
@@ -111,7 +107,6 @@ hr {
     #main-content #filter-section .filter-by-month, #main-content #filter-section .filter-display-all {
       display: inline; }
     #main-content #filter-section h3, #main-content #filter-section #display-all-releases, #main-content #filter-section #display-all-releases.disabled, #main-content #filter-section select {
-      /*@include main-content-padding;*/
       display: inline;
       padding-right: 5px; }
     #main-content #filter-section input {
@@ -132,7 +127,6 @@ hr {
       color: white;
       cursor: pointer;
       height: 3em;
-      /*padding: 0px $main-content-padding-left;*/
       transition: color 1s ease; }
     #main-content #filter-section .disabled#display-all-releases {
       -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
@@ -145,7 +139,6 @@ hr {
       cursor: not-allowed; }
     #main-content #filter-section select {
       height: 3em;
-      /*margin: 0px $main-content-padding-left;*/
       min-width: 11em;
       padding: 0px 0px 0px 1em; }
     @media (max-width: 975px) {
@@ -183,18 +176,6 @@ hr {
     #main-content #footer .disabled#load-more-releases #load-more-releases-icon {
       color: #D7D7D7; }
 
-@media (max-width: 600px) {
-  #main-content {
-    margin: -3em auto 0;
-    width: 90%; }
-    #main-content #releases-section .change .change-header .change-title {
-      display: block;
-      margin-bottom: 0;
-      max-width: 100%; }
-    #main-content #releases-section .change .change-header .change-system {
-      display: block;
-      float: none;
-      margin: 10px 0; } }
 h2.system-tag, #main-content #introduction h1.system-tag {
   color: #636363;
   content: "eOffer";
@@ -205,11 +186,11 @@ h2.system-tag, #main-content #introduction h1.system-tag {
   float: right; }
 
 .system-tag:after {
+  clear: both;
   content: "";
-  visibility: hidden;
   display: block;
   height: 0;
-  clear: both; }
+  visibility: hidden; }
 
 .change h3, .change #main-content #filter-section #display-all-releases, #main-content #filter-section .change #display-all-releases, .change #main-content #filter-section select, #main-content #filter-section .change select {
   color: #ed1c24;
@@ -280,11 +261,25 @@ h2.system-tag, #main-content #introduction h1.system-tag {
   width: 40px;
   z-index: 1000; }
 
+/* Screenshot Modal Styles */
 .fancybox-wrap .fancybox-title {
   top: calc(100% + 10px);
   width: calc(100% - 20px * 2); }
   .fancybox-wrap .fancybox-title .child {
     max-width: 100%;
     white-space: initial; }
+
+@media (max-width: 600px) {
+  #main-content {
+    margin: -3em auto 0;
+    width: 90%; }
+    #main-content #releases-section .change .change-header .change-title {
+      display: block;
+      margin-bottom: 0;
+      max-width: 100%; }
+    #main-content #releases-section .change .change-header .change-system {
+      display: block;
+      float: none;
+      margin: 10px 0; } }
 
 /*# sourceMappingURL=styles.css.map */
