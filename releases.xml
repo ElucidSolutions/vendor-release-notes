@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
-    <release>
+  <release>
+    <date>2017-05-20</date>
+    <changes>
+      <change>
+        <title>Allow the CO/CS to Attach Option Mod Documents Via FSS Online</title>
+        <number>0</number>
+        <system></system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>Previously, COs/CSs were unable to attach option documents via FSS Online and process the award of the option modification.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that COs/CSs can create an option mod for vendors to then add attachments in eMod. The CO/CS can also receive attachments outside of eMod from the vendor and attach them through FSS Online, and then submit the modification unilaterally.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Authorized Negotiators May Now Access Work in Progress and Contract History</title>
+        <number>1</number>
+        <system></system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>When a new Authorized Negotiator was added to a contract, they were not able to access all previous modifications or any work-in-progress mods.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that all current and future negotiators have the ability to access contract history and any work-in-progress modifications.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
     <date>2017-02-18</date>
     <changes>
       <change>

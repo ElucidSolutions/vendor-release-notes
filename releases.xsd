@@ -43,6 +43,7 @@
                           <xs:element name="system">
                             <xs:simpleType>
                               <xs:restriction base="xs:string">
+                                <xs:enumeration value="Advantage"/>
                                 <xs:enumeration value="eOffer"/>
                                 <xs:enumeration value="eMod"/>
                                 <xs:enumeration value="eOffer/eMod"/>
