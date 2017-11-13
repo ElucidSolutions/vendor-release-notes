@@ -1,6 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
   <release>
+    <date>2017-11-18</date>
+    <changes>
+      <change>
+        <title>In ORS and FSS Online, COs/CSs will now be able to download all documents on the Associated Docs tabs with a Download All button.</title>
+        <number>0</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>eOffer and eMod are receiving a revision to their user interface (UI) and will now have an up-to-date look and feel.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that screens within eOffer/eMod have been updated but the functionality remains the same.</p>]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>In ORS and FSS Online, COs/CSs will now be able to download all documents on the Associated Docs tabs with a Download All button.</title>
+        <number>1</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Previously in ORS and FSS Online, COs/CSs had to view or download associated documents individually.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs/CSs should be aware that they can now download all documents in Associated Documents sections of ORS and FSS Online with one button. This will not impact the contract package or award package.</p>]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>In FSS Online, corrections have been made to cycle time reports for accuracy and clarity.</title>
+        <number>2</number>
+        <system>ECMS/eViewer</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Various reports in FSS Online were displaying incorrect information or erroneous error messages.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware the reporting accuracy and messages have been improved.</p>]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>In FSS Online, COs/CSs can now specify DUNC or DUNS when loading a new contract or correcting an existing contract.</title>
+        <number>3</number>
+        <system>FSS Online</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>COs/CSs did not have an easy way to designate a contractor’s primary contact information between their DUNC (DUN-Contractor) or DUNS (DUN-Supplier) contact information. Order Management Services (OMS) would automatically send information to a vendor’s DUNS (DUN-Supplier) contact information.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs/CSs should be aware that they may select a vendor’s primary contact information through the DUNS Indicator field on the Contract Load screen in FSS Online. The selected contact information will be used for fulfilling purchase orders in OMS.</p>]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>ECMS has been updated to provide COs changing a DCN with only applicable vendor DCNs, and to notify eMod of DCN changes to ensure the systems stay in sync.</title>
+        <number>4</number>
+        <system>FSS Online</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>When a CO would change the DCN for a vendor uploaded document, they were presented with a list of all possible DCNs instead of only vendor DCNs. When a DCN was updated in ECMS, it was not automatically synced in eMod.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that changing the DCN for vendor uploaded documents will be a more seamless experience.</p>]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>In FSS Online, As part of the transition to uPIID contract number format, COs/CSs can now enter instrument type in several places, including contract load.</title>
+        <number>5</number>
+        <system>FSS Online</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>FSS Online must comply with FAR Part 4.605(e), which requires agencies to standardize the format of the Procurement Instrument Identifier (PIID) and report the PIID to the Federal Procurement Data System - Next Generation (FPDS-NG). These updates were made as part of the transition to uPIID format.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>To enter an instrument type, users should select “Yes” when asked if the solicitation number is in the uPIID format.</p>]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>eOffer and eMod are phasing out the American Recovery and Reinvestment Act (ARRA).</title>
+        <number>6</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>The American Recovery and Reinvestment Act (ARRA) has come to an end and is no longer applicable to solicitations.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that ARRA no longer applies to solicitations.</p>]]></description>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2017-08-18</date>
+    <changes>
+      <change>
+        <title>UX/UI Improvements to eOffer/eMod</title>
+        <number>0</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>The Office of Customer Experience conducted user experience testing with eOffer/eMod and identified opportunities to improve usability.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs/CSs should be aware that the user experience of eOffer/eMod has been improved.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Contract Files Will Indicate If a Document Is Part of the Award Package in ECMS</title>
+        <number>1</number>
+        <system>ECMS/eViewer</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>The list of documents within a Contract File did not indicate whether a document was a part of the Award Package.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>COs/CSs should be aware of the new column within ECMS to indicate whether a document is a part of the Award Package. To enable the new column, users should:</p>
+            <ol>
+              <li>Access the submenu Document List</li>
+              <li>Access the "columns" menu</li>
+              <li>Select "Document" from the drop-down menu</li>
+              <li>Select the appropriate column and use the arrow to add it to their Document Lists</li>
+            </ol>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>FSS Online Option Date Reports for BPAs with Non-MAS Parent Contracts</title>
+        <number>2</number>
+        <system>FSS Online</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>Previously options awarded to BPAs with non-MAS parent contracts were complicated because of misaligned end dates. The rules were altered to allow greater visibility in and flexibility to ensure COs could manage and exercise options for  these BPAs. In July 2017, COs were given the ability to enter Options date information for non-MAS contracts within FSS Online.  This information about Option dates was not accessible through running reports.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs can now run reports in FSS Online to view beginning and end dates for BPAs and their non-MAS parent contracts.   Note that the report will return all contracts that have active time within the report period, even if the begin date is prior to the report period.</p>]]></description>
+          <images>
+            <image>
+              <url>screenshots/081617/BCR67240_002.jpg</url>
+              <caption><![CDATA[The Option Date Report.]]></caption>
+              <alternateText><![CDATA[The Option Date Report.]]></alternateText>
+            </image>
+            <image>
+              <url>screenshots/081617/BCR67240_003.jpg</url>
+              <caption><![CDATA[How to access the Option Date Report.]]></caption>
+              <alternateText><![CDATA[How to access the Option Date Report.]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Test Site for Training on FSS Online for Designated Trainers</title>
+        <number>3</number>
+        <system>FSS Online</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>Users have been requesting a more flexible representative environment in which to conduct training.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>COs/CSs should be aware that the designated trainer within each group can provide access to the FSS Online demo environment. Seek out your designated trainer if you wish to explore the test environment.</p>
+            <p>COs/CSs should also note that although currently only the test site for FSS Online is live, other systems will be added in the future.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>eLibrary Can Display Contact Information from the Contract Master File Instead of the Vendor Master File</title>
+        <number>4</number>
+        <system>CSM WS</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>Previously eLibrary displayed contract email and url’s based off what was found in a vendor’s DUNS.  If a vendor has multiple contracts, the contact information was still drawn from the DUNS and not the Contract Master File. This lead to complications as the actual points of contact were different from the listed contacts.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs/CSs should be aware that eLibrary is now able to show different contract specific contact email addresses and URLs across different contracts from the same vendor.</p>]]></description>
+          <images>
+            <image>
+              <url>screenshots/081617/BCR90384_001.jpg</url>
+              <caption><![CDATA[The eLibrary interface. Click the “Vendor” tab to display vendor information, including contact information.]]></caption>
+              <alternateText><![CDATA[The eLibrary interface. Click the “Vendor” tab to display vendor information, including contact information.]]></alternateText>
+            </image>
+            <image>
+              <url>screenshots/081617/BCR90384_002.jpg</url>
+              <caption><![CDATA[Click the “Correction” button to make edits to contract-specific information.]]></caption>
+              <alternateText><![CDATA[Click the “Correction” button to make edits to contract-specific information.]]></alternateText>
+            </image>
+            <image>
+              <url>screenshots/081617/BCR90384_003.jpg</url>
+              <caption><![CDATA[The eMail and URL fields above may be used to make contract-specific edits. The lower half of the screen shows DUNS-related contact information.]]></caption>
+              <alternateText><![CDATA[The eMail and URL fields above may be used to make contract-specific edits. The lower half of the screen shows DUNS-related contact information.]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Ensure that Downloaded Files Retain Their Original Filenames in FSS Online</title>
+        <number>5</number>
+        <system>FSS Online</system>
+        <type>System Fixes</type>
+        <motivation>
+         <description><![CDATA[<p>Previous when downloading documents from a contract file in FSS Online, the file names were lost upon download. A previous fix worked for PDF documents but was inconsistent with Microsoft formats.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that filenames will be preserved when downloading documents from FSS Online.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
     <date>2017-05-20</date>
     <changes>
       <change>

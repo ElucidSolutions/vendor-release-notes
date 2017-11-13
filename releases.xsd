@@ -44,9 +44,12 @@
                             <xs:simpleType>
                               <xs:restriction base="xs:string">
                                 <xs:enumeration value="Advantage"/>
+                                <xs:enumeration value="CSM WS"/>
+                                <xs:enumeration value="ECMS/eViewer"/>
                                 <xs:enumeration value="eOffer"/>
                                 <xs:enumeration value="eMod"/>
                                 <xs:enumeration value="eOffer/eMod"/>
+                                <xs:enumeration value="FSS Online"/>
                               </xs:restriction>
                             </xs:simpleType>
                           </xs:element>
