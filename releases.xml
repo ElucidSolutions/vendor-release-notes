@@ -4,87 +4,30 @@
     <date>2017-11-18</date>
     <changes>
       <change>
-        <title>In ORS and FSS Online, COs/CSs will now be able to download all documents on the Associated Docs tabs with a Download All button.</title>
-        <number>0</number>
+        <title>Updates to the eOffer/eMod User Interface (UI)</title>
+        <number>71784</number>
         <system>eOffer/eMod</system>
         <type>Updates and Enhancements</type>
         <motivation>
-          <description><![CDATA[<p>eOffer and eMod are receiving a revision to their user interface (UI) and will now have an up-to-date look and feel.</p>]]></description>
+          <description><![CDATA[<p>eOffer/eMod has been receiving user interfaces updates through both Section 508 system updates and features implemented in support of the Formatted Pricing Tool (FPT).  Older screens within eOffer/eMod no longer match the newer visual style.</p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>Be aware that screens within eOffer/eMod have been updated but the functionality remains the same.</p>]]></description>
+          <description><![CDATA[
+            <p>eOffer/eMod will now receive an updated look and feel that is consistent throughout both applications.  While the screens have been updated, the functionality remains the same.</p>
+            <p>The <a href="https://eoffer.gsa.gov/AMSupport/index.html">eOffer/eMod Help Center</a> will be updated in the coming months.</p>
+          ]]></description>
         </effect>
       </change>
       <change>
-        <title>In ORS and FSS Online, COs/CSs will now be able to download all documents on the Associated Docs tabs with a Download All button.</title>
-        <number>1</number>
-        <system>eOffer/eMod</system>
-        <type>Updates and Enhancements</type>
-        <motivation>
-          <description><![CDATA[<p>Previously in ORS and FSS Online, COs/CSs had to view or download associated documents individually.</p>]]></description>
-        </motivation>
-        <effect>
-          <description><![CDATA[<p>COs/CSs should be aware that they can now download all documents in Associated Documents sections of ORS and FSS Online with one button. This will not impact the contract package or award package.</p>]]></description>
-        </effect>
-      </change>
-      <change>
-        <title>In FSS Online, corrections have been made to cycle time reports for accuracy and clarity.</title>
-        <number>2</number>
-        <system>ECMS/eViewer</system>
-        <type>Updates and Enhancements</type>
-        <motivation>
-          <description><![CDATA[<p>Various reports in FSS Online were displaying incorrect information or erroneous error messages.</p>]]></description>
-        </motivation>
-        <effect>
-          <description><![CDATA[<p>Be aware the reporting accuracy and messages have been improved.</p>]]></description>
-        </effect>
-      </change>
-      <change>
-        <title>In FSS Online, COs/CSs can now specify DUNC or DUNS when loading a new contract or correcting an existing contract.</title>
-        <number>3</number>
-        <system>FSS Online</system>
-        <type>Updates and Enhancements</type>
-        <motivation>
-          <description><![CDATA[<p>COs/CSs did not have an easy way to designate a contractor’s primary contact information between their DUNC (DUN-Contractor) or DUNS (DUN-Supplier) contact information. Order Management Services (OMS) would automatically send information to a vendor’s DUNS (DUN-Supplier) contact information.</p>]]></description>
-        </motivation>
-        <effect>
-          <description><![CDATA[<p>COs/CSs should be aware that they may select a vendor’s primary contact information through the DUNS Indicator field on the Contract Load screen in FSS Online. The selected contact information will be used for fulfilling purchase orders in OMS.</p>]]></description>
-        </effect>
-      </change>
-      <change>
-        <title>ECMS has been updated to provide COs changing a DCN with only applicable vendor DCNs, and to notify eMod of DCN changes to ensure the systems stay in sync.</title>
-        <number>4</number>
-        <system>FSS Online</system>
-        <type>Updates and Enhancements</type>
-        <motivation>
-          <description><![CDATA[<p>When a CO would change the DCN for a vendor uploaded document, they were presented with a list of all possible DCNs instead of only vendor DCNs. When a DCN was updated in ECMS, it was not automatically synced in eMod.</p>]]></description>
-        </motivation>
-        <effect>
-          <description><![CDATA[<p>Be aware that changing the DCN for vendor uploaded documents will be a more seamless experience.</p>]]></description>
-        </effect>
-      </change>
-      <change>
-        <title>In FSS Online, As part of the transition to uPIID contract number format, COs/CSs can now enter instrument type in several places, including contract load.</title>
-        <number>5</number>
-        <system>FSS Online</system>
-        <type>Updates and Enhancements</type>
-        <motivation>
-          <description><![CDATA[<p>FSS Online must comply with FAR Part 4.605(e), which requires agencies to standardize the format of the Procurement Instrument Identifier (PIID) and report the PIID to the Federal Procurement Data System - Next Generation (FPDS-NG). These updates were made as part of the transition to uPIID format.</p>]]></description>
-        </motivation>
-        <effect>
-          <description><![CDATA[<p>To enter an instrument type, users should select “Yes” when asked if the solicitation number is in the uPIID format.</p>]]></description>
-        </effect>
-      </change>
-      <change>
-        <title>eOffer and eMod are phasing out the American Recovery and Reinvestment Act (ARRA).</title>
-        <number>6</number>
+        <title>Phasing out the American Recovery and Reinvestment Act (ARRA)</title>
+        <number>71784</number>
         <system>eOffer/eMod</system>
         <type>Updates and Enhancements</type>
         <motivation>
           <description><![CDATA[<p>The American Recovery and Reinvestment Act (ARRA) has come to an end and is no longer applicable to solicitations.</p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>Be aware that ARRA no longer applies to solicitations.</p>]]></description>
+          <description><![CDATA[<p>Be aware that the ARRA mod is no longer offered as a Terms and Conditions modification on eMod, and the Standard Responses question relating to ARRA is being phased out of eOffer.</p>]]></description>
         </effect>
       </change>
     </changes>
