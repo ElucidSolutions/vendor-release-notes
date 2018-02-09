@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
   <release>
+    <date>2018-02-17</date>
+    <changes>
+      <change>
+        <title>Opt-in to TDR</title>
+        <number>9571061751484</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Participation in the Transactional Data Reporting (TDR) program was changed from mandatory to optional in November of 2017. In support of this change, eMod has been enhanced to make the Opt-In process easier.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendors should be aware that they will be able to Opt-In to TDR more easily through the TDR Opt-In dialog in eMod. The modification and option workflows will receive their enhancements first. Enhancements to offers will appear in future releases.</p>
+            <p>The following specific enhancements will appear in this release:</p>
+            <ul>
+              <li><p><strong>Add SIN TDR Opt-In</strong><br/>When executing an Add SIN modification on a TDR schedule, vendors will be presented with the ability to opt-in to TDR.</p></li>
+              <li><p><strong>Option TDR Opt-In</strong><br/>When executing an Option modification on a TDR schedule, vendors will be presented with the ability to opt-in to TDR.</p></li>
+            </ul>
+            <p>In both cases, a prompt like the following will be shown:</p>
+          ]]></description>
+          <images>
+            <image>
+              <url>screenshots/021718/BCR87527_001.jpg</url>
+              <caption><![CDATA[Users will be presented with the TDR Opt-In dialog on the Add SIN and Option Modifications.]]></caption>
+              <alternateText><![CDATA[Users will be presented with the TDR Opt-In dialog on the Add SIN and Option Modifications.]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Show the FSS Online Mod Number in eMod</title>
+        <number>0733719506843</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>eMod references modifications with an "eMod ID" (ex. 86KE9VI7), while FSS Online references modifications with a "mod number" (ex. PS-0053).  This discrepancy made it challenging for vendors to identify mods with their COs.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Be aware that eMod will now display the FSS Online mod number in a new Mod No. column on the eMod inbox page.  Note the FSS Online mod number is only generated upon submission and will display Pending until the mod has been submitted. Use this mod number to identify mods to your CO.</p>
+          ]]></description>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
     <date>2017-11-18</date>
     <changes>
       <change>
