@@ -4,7 +4,7 @@
     <date>2018-5-10</date>
     <changes>
       <change>
-        <title>Opt-in to TDR through eOffer Opt-in Dialog</title>
+        <title>Opt-in to TDR through eOffer Opt-in Dialogue</title>
         <number>87527</number>
         <system>eOffer/eMod</system>
         <type>Updates and Enhancements</type>
@@ -41,11 +41,11 @@
         <system>eOffer/eMod</system>
         <type>Updates and Enhancements</type>
         <motivation>
-          <description><![CDATA[<p>Vendors will find that eOffer/eMod has been updated to address issues with speed, especially when uploading files and accessing the system between the hours of 9 to 2.  The system has been modified and tested to address these issues and now offers a better user experience.  between pages, upload files, and navigate sections of the system.</p>]]></description>
+          <description><![CDATA[<p>Vendors will find that eOffer/eMod has been updated to address issues with speed, especially when uploading files and accessing the system between the hours of 9AM to 2PM. The system has been modified and tested to address these issues and now offers a better user experience for offerors to move between pages, upload files, and navigate sections of the system.</p>]]></description>
         </motivation>
         <effect>
           <description><![CDATA[
-            <p>Vendors will now be able to between pages, upload files, and navigate sections of the system much easier.</p>
+            <p>Vendors will now be able to move between pages, upload files, and navigate sections of the system much easier.</p>
           ]]></description>
         </effect>
       </change>
@@ -56,13 +56,13 @@
         <type>Updates and Enhancements</type>
         <motivation>
           <description><![CDATA[
-            <p>FAR Case 2014-003 changed the contracting rules related to the use of SubK plans in contracts, and these changes needed to be reflected in the acquisition systems. A small business is not required to have a SubK plan while a large business is. When a business would re-represent it’s business size, COs/CSs would manually have to ensure the business was compliant with SubK Plan requirements.</p>
+            <p>FAR Case 2014-003 changed the contracting rules related to the use of SubK plans in contracts, and these changes needed to be reflected in the acquisition systems. A small business is not required to have a SubK plan while a large business is. When a business would re-represent its business size, COs/CSs would manually have to ensure the business was compliant with SubK Plan requirements.</p>
             <p>For more information on the SubK rule changes, view the Summary on the <a href="FederalRegister.gov">FederalRegister.gov</a>.</p>
           ]]></description>
         </motivation>
         <effect>
           <description><![CDATA[
-            <p>After a vendor submits and receives approval for a Re-representation of Business Size modification, they will automatically receive a modification to incorporate or terminate a subcontracting plan depending the business size change.</p>
+            <p>After a vendor submits and receives approval for a Re-representation of Business Size modification, they will automatically receive a modification to incorporate or terminate a subcontracting plan depending on the business size change.</p>
           ]]></description>
           <images></images>
         </effect>
