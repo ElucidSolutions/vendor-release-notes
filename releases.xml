@@ -6,7 +6,7 @@
       <change>
         <title>Opt-in to TDR through eOffer Opt-in Dialogue</title>
         <number>87527</number>
-        <system>eOffer/eMod</system>
+        <system>eOffer</system>
         <type>Updates and Enhancements</type>
         <motivation>
           <description><![CDATA[<p>Participation in the Transactional Data Reporting (TDR) program was changed from mandatory to optional in November of 2017. In support of this change, eMod received enhancements in February 2018 to allow users to opt-in to TDR through the Add SIN and Option modifications. eOffer did not have the ability to allow users to opt-in to TDR while submitting an offer.</p>]]></description>
@@ -21,7 +21,7 @@
       <change>
         <title>Terms and Conditions Mod Process Improvement</title>
         <number>88655</number>
-        <system>eOffer/eMod</system>
+        <system>eMod</system>
         <type>Updates and Enhancements</type>
         <motivation>
           <description><![CDATA[
@@ -52,7 +52,7 @@
       <change>
         <title>Update SubK processes for compliance with FAR Case 2014-003</title>
         <number>87246</number>
-        <system>eOffer/eMod</system>
+        <system>eMod</system>
         <type>Updates and Enhancements</type>
         <motivation>
           <description><![CDATA[
