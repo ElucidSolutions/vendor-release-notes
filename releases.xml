@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
   <release>
-    <date>2018-5-10</date>
+    <date>2018-08-18</date>
+    <changes>
+      <change>
+        <title>eMod has a new “Participate in TDR” modtype</title>
+        <number>64902069647</number>
+        <system>eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Participation in the Transactional Data Reporting (TDR) program was changed from mandatory to optional in November of 2017.  Previously, the only way to opt-in to TDR through existing contracts was through the Add SIN and Option modifications. There was no independent functionality to allow vendors to opt-in.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendors, who are on a schedule with TDR participation and are not currently participating, will see the Participate in TDR mod under the Terms and Conditions modtypes.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Transitioning out of the ACES program and making other certificates acceptable in eOffer/eMod</title>
+        <number>14787697416</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>The ACES Certificate Program is discontinued as a means to issue digital certificates to the acquisition community.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>As the ACES Certificate Program is transitioned out, eOffer/eMod will expand its support for other certificate providers. Users who already have an ACES certificate can continue to use their certificates until they expire.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2018-05-10</date>
     <changes>
       <change>
         <title>Opt-in to TDR through eOffer Opt-in Dialogue</title>
