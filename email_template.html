@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <style type="text/css">
+      /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+      #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+      .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+      body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+      table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+      img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+      /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+      body{margin:0; padding:0;}
+      img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+      table{border-collapse:collapse !important;}
+      body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+      /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+      /* ========== Page Styles ========== */
+
+      #bodyCell{padding:20px;}
+      #templateContainer{width:600px;}
+
+      /**
+      * @tab Page
+      * @section background style
+      * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+      * @theme page
+      */
+      body, #bodyTable{
+        /*@editable*/ background-color:#ffffff;
+      }
+
+      /**
+      * @tab Page
+      * @section background style
+      * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+      * @theme page
+      */
+      #bodyCell{
+
+      }
+
+      /**
+      * @tab Page
+      * @section email border
+      * @tip Set the border for your email.
+      */
+      #templateContainer{
+        /*@editable*/ border:none;
+      }
+
+      /**
+      * @tab Page
+      * @section heading 1
+      * @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+      * @style heading 1
+      */
+      h1{
+        /*@editable*/ color:#1799e4 !important;
+        display:block;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:20px;
+        /*@editable*/ font-style:normal;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ line-height:100%;
+        /*@editable*/ letter-spacing:normal;
+        margin-top:0;
+        margin-right:0;
+        margin-bottom:10px;
+        margin-left:0;
+        /*@editable*/ text-align:left;
+      }
+
+      /**
+      * @tab Page
+      * @section heading 2
+      * @tip Set the styling for all second-level headings in your emails.
+      * @style heading 2
+      */
+      h2{
+        color:#ed1c24;
+        display:block;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:17px;
+        /*@editable*/ font-style:normal;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ line-height:100%;
+        /*@editable*/ letter-spacing:normal;
+        margin-top:0;
+        margin-right:0;
+        margin-bottom:10px;
+        margin-left:0;
+        /*@editable*/ text-align:left;
+      }
+
+      /**
+      * @tab Page
+      * @section heading 3
+      * @tip Set the styling for all third-level headings in your emails.
+      * @style heading 3
+      */
+      h3{
+        /*@editable*/ color:#606060 !important;
+        display:block;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:16px;
+        /*@editable*/ font-style:italic;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ line-height:100%;
+        /*@editable*/ letter-spacing:normal;
+        margin-top:0;
+        margin-right:0;
+        margin-bottom:10px;
+        margin-left:0;
+        /*@editable*/ text-align:left;
+      }
+
+      /**
+      * @tab Page
+      * @section heading 4
+      * @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+      * @style heading 4
+      */
+      h4{
+        /*@editable*/ color:#363636 !important;
+        display: block;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:16px;
+        /*@editable*/ font-style:italic;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ line-height:100%;
+        /*@editable*/ letter-spacing:normal;
+        margin-top:0;
+        margin-right:0;
+        margin-bottom:10px;
+        margin-left:0;
+        /*@editable*/ text-align:left;
+      }
+
+      /* ========== Header Styles ========== */
+
+      /**
+      * @tab Header
+      * @section preheader style
+      * @tip Set the background color and bottom border for your email's preheader area.
+      * @theme header
+      */
+      #templatePreheader{
+        /*@editable background-color:#F4F4F4; */
+        /*@editable border-bottom:1px solid #CCCCCC; */
+      }
+
+      /**
+      * @tab Header
+      * @section preheader text
+      * @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+      */
+      .preheaderContent{
+        /*@editable*/ color:#808080;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:10px;
+        /*@editable*/ line-height:125%;
+        /*@editable*/ text-align:left;
+      }
+
+      /**
+      * @tab Header
+      * @section preheader link
+      * @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+      */
+      .preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+        /*@editable*/ color:#606060;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ text-decoration:underline;
+      }
+      .preheaderContent a:hover{
+        text-decoration:underline;
+      }
+
+      /**
+      * @tab Header
+      * @section header style
+      * @tip Set the background color and borders for your email's header area.
+      * @theme header
+      */
+      #templateHeader{
+        /*@editable*/ background-color:#F4F4F4;
+        /*@editable*/ border-top:0px solid #1799e4;
+        /*@editable*/ border-bottom:0px solid #1799e4;
+      }
+
+      /**
+      * @tab Header
+      * @section header text
+      * @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+      */
+      .headerContent{
+        /*@editable*/ color:#505050;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:20px;
+        /*@editable*/ font-weight:bold;
+        /*@editable*/ line-height:100%;
+        /*@editable*/ padding-top:0;
+        /*@editable*/ padding-right:0;
+        /*@editable*/ padding-bottom:0;
+        /*@editable*/ padding-left:0;
+        /*@editable*/ text-align:left;
+        /*@editable*/ vertical-align:middle;
+      }
+
+      /**
+      * @tab Header
+      * @section header link
+      * @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+      */
+      .headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+        /*@editable*/ color:#EB4102;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ text-decoration:underline;
+      }
+      .headerContent a:hover{
+        text-decoration:underline;
+      }
+
+      #headerImage{
+        height:auto;
+        max-width:600px;
+      }
+
+      /* ========== Body Styles ========== */
+
+      /**
+      * @tab Body
+      * @section body style
+      * @tip Set the background color and borders for your email's body area.
+      */
+      #templateBody{
+        /*@editable*/ background-color:#F4F4F4;
+        /*@editable*/ border-top:0px solid #FFFFFF;
+        /*@editable*/ border-bottom:0px solid #CCCCCC;
+      }
+
+      .bodySection{
+        border: 1px solid #aeaeae;
+        background: #FFFFFF;
+      }
+      .shadow{
+        border-bottom: 3px solid #0677b8;
+
+      }
+      /**
+      * @tab Body
+      * @section body text
+      * @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+      * @theme main
+      */
+      .bodyContent{
+        /*@editable*/ color:#505050;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:16px;
+        /*@editable*/ line-height:150%;
+        padding-top:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+        padding-left:20px;
+        /*@editable*/ text-align:left;
+      }
+      .bcrList{
+        /*@editable*/ color:#505050;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:16px;
+        /*@editable*/ line-height:150%;
+        padding-top:0px;
+        padding-right:0px;
+        padding-bottom:0px;
+        padding-left:0px;
+      }
+      .bcrMore a{
+        font-size: 16px;
+        text-decoration: none;
+        color:#1799e4;
+      }
+      .bcrMore a:hover{
+        text-decoration: underline;
+      }
+      .bcrEven{
+        background-color:#f3f3f3;
+        border-bottom:1px solid #CCCCCC;
+        padding-top:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+        padding-left:20px;
+
+      }
+      .bcrOdd{
+        border-bottom:1px solid #CCCCCC;
+        padding-top:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+        padding-left:20px;
+
+      }
+      .finalMessage{
+        /*@editable*/ color:#505050;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:16px;
+        /*@editable*/ line-height:150%;
+        padding-top:20px;
+        padding-right:20px;
+        padding-bottom:0px;
+        padding-left:20px;
+        /*@editable*/ text-align:center;
+      }
+
+      /**
+      * @tab Body
+      * @section body link
+      * @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+      */
+      .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+        /*@editable*/ color:#1799e4;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ text-decoration:none;
+      }
+
+      .bodyContent img{
+        display:inline;
+        height:auto;
+        max-width:560px;
+      }
+      .emailButton{background-color:#70c6f7; border-collapse:separate; border-radius:0px;}
+      .buttonContent a:link, .buttonContent a:visited, .buttonContent a .yshortcuts{color:#FFFFFF; font-family:Verdana; font-size:20px;  line-height:50px; padding: 5px 0px; text-align:center; text-decoration:none;}
+
+      .highlightsBar{background-color:#1799e4;}
+      .highlightsBar h2{color: #FFFFFF;}
+      #highlightsH2{color:#FFFFFF; font-size: 23px; font-weight: normal; margin-bottom: 0px; padding: 10px 20px;}
+      .evenBCR{background-color:#f3f3f3;}
+      /* ========== Footer Styles ========== */
+
+      /**
+      * @tab Footer
+      * @section footer style
+      * @tip Set the background color and borders for your email's footer area.
+      * @theme footer
+      */
+      #templateFooter{
+        /*@editable*/ background-color:#636363;
+        /*@editable*/ border-top:1px solid #FFFFFF;
+      }
+
+      /**
+      * @tab Footer
+      * @section footer text
+      * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+      * @theme footer
+      */
+      .footerContent{
+        /*@editable*/ color:#FFFFFF;
+        /*@editable*/ font-family:Helvetica;
+        /*@editable*/ font-size:14px;
+        /*@editable*/ line-height:150%;
+        padding-top:5px;
+        padding-right:20px;
+        padding-bottom:20px;
+        padding-left:20px;
+        /*@editable*/ text-align:center;
+      }
+
+      /**
+      * @tab Footer
+      * @section footer link
+      * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+      */
+      .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+        /*@editable*/ color:#FFFFFF;
+        /*@editable*/ font-weight:normal;
+        /*@editable*/ text-decoration:none;
+      }
+      .footerContent a:hover{
+        text-decoration: underline;
+      }
+      .rewardsLink{height:0px; width:0px; display:none;}
+
+      /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+        /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+        body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+        /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+        #bodyCell{padding:10px !important;}
+
+        /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+        /* ======== Page Styles ======== */
+
+        /**
+        * @tab Mobile Styles
+        * @section template width
+        * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+        */
+        #templateContainer{
+          max-width:600px !important;
+          /*@editable*/ width:100% !important;
+        }
+
+        /**
+        * @tab Mobile Styles
+        * @section heading 1
+        * @tip Make the first-level headings larger in size for better readability on small screens.
+        */
+        h1{
+          /*@editable*/ font-size:24px !important;
+          /*@editable*/ line-height:100% !important;
+        }
+
+        /**
+        * @tab Mobile Styles
+        * @section heading 2
+        * @tip Make the second-level headings larger in size for better readability on small screens.
+        */
+        h2{
+          /*@editable*/ font-size:20px !important;
+          /*@editable*/ line-height:100% !important;
+        }
+
+        /**
+        * @tab Mobile Styles
+        * @section heading 3
+        * @tip Make the third-level headings larger in size for better readability on small screens.
+        */
+        h3{
+          /*@editable*/ font-size:18px !important;
+          /*@editable*/ line-height:100% !important;
+        }
+
+        /**
+        * @tab Mobile Styles
+        * @section heading 4
+        * @tip Make the fourth-level headings larger in size for better readability on small screens.
+        */
+        h4{
+          /*@editable*/ font-size:16px !important;
+          /*@editable*/ line-height:100% !important;
+        }
+
+        /* ======== Header Styles ======== */
+
+        #templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+
+        /**
+        * @tab Mobile Styles
+        * @section header image
+        * @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+        */
+        #headerImage{
+          height:auto !important;
+          /*@editable*/ max-width:600px !important;
+          /*@editable*/ width:100% !important;
+        }
+
+        /**
+        * @tab Mobile Styles
+        * @section header text
+        * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+        */
+        .headerContent{
+          /*@editable*/ font-size:20px !important;
+          /*@editable*/ line-height:125% !important;
+        }
+
+        /* ======== Body Styles ======== */
+
+        /**
+        * @tab Mobile Styles
+        * @section body text
+        * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+        */
+        .bodyContent{
+          /*@editable*/ font-size:18px !important;
+          /*@editable*/ line-height:125% !important;
+        }
+
+        /* ======== Footer Styles ======== */
+
+        /**
+        * @tab Mobile Styles
+        * @section footer text
+        * @tip Make the body content text larger in size for better readability on small screens.
+        */
+        .footerContent{
+          /*@editable*/ font-size:14px !important;
+          /*@editable*/ line-height:115% !important;
+        }
+
+        .footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+      }
+    </style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+      <center>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+              <tr>
+                  <td align="center" valign="top" id="bodyCell">
+                      <!-- BEGIN TEMPLATE // -->
+                      <table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                            <!-- Background / Dropshadow Container -->
+                            <tr>
+                              <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="bodySection">
+                                  <tr>
+                                    <td align="center" valign="top">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <!-- BEGIN HEADER // -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                                                  <tr>
+                                                      <td valign="top" class="headerContent">
+                                                        <img src="https://gallery.mailchimp.com/721f7754c57061de2a9c07f67/images/daaa4f7b-60cf-4d96-9f02-98f029916117.jpg" style="max-width:600px; background-color:#1799e4;" id="headerImage" alt="Acquisition Systems Release Notes" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                              <!-- // END HEADER -->
+                                          </td>
+                                      </tr>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <!-- BEGIN BODY // -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tr>
+                                                      <td valign="top" class="bodyContent" mc:edit="body_content">
+                                                          <h1>Executive Summary</h1>
+                                                          <h2>Release Notes - May 2016</h2>
+                                                          <br />
+                                                          Hello,
+                                                          <br />
+                                                          <br />
+                                  The May 2016 release is scheduled for <strong>Saturday, May 14th, 2016</strong>. Please visit the online <a href="http://amsystemssupport.fas.gsa.gov/guides/release-notes/index.html" target="_blank" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #1799e4;font-weight: normal;text-decoration: none;">Release Notes</a> and read about the updates as there are additional changes not written about in this email. You may also read notes from 
+                                  <br />
+                                  <br />
+                                  As always the system-specific help centers will receive their updates a few weeks after the release.  
+                                  <br />
+                                  <br />
+                                  Here are the highlights for the enhancements going into effect. 
+                                  <br />
+                                  <br />
+                                  Regards,
+                                  <br />
+                                  <br />
+                                  -AM Systems Support
+                                  </td>
+                                                  </tr>
+          
+                              <!-- Button Row ROW // -->
+                              <tr>
+                                          <td align="center" valign="top">
+                                              <!-- CENTERING TABLE // -->
+                                              <table border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                  <tr>
+                                                      <td align="center" valign="top">
+                                                          <!-- // CONTENT TABLE // -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="360" class="emailButton">
+                                                                    <tr>
+                                                                        <td align="center" valign="middle" class="buttonContent shadow">
+                                                                            <a href="http://amsystemssupport.fas.gsa.gov/guides/release-notes/changes.html" target="_blank">SEE THE FULL RELEASE NOTES</a>
+
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </table>
+                                                            <!-- // CONTENT TABLE -->
+                                                            <br />
+                                                            <br />
+                                                    </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // CENTERING TABLE -->
+                                            </td>
+                                        </tr>
+                                        
+                                        
+
+                                        <tr>
+                                          <td>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="highlightsBar">
+                                              <tr>
+                                                <td>
+                                                  <h2 id="highlightsH2">Highlights</h2>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+          
+                              <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" class="bcrList" >
+                                                            <div mc:edit="std_content00" class="bcrOdd">
+                                                                <h1 class="h1">MAS Automated Welcome Letter (Part of the Make It Easy (MIE) Project)</h1>
+                                                                <h2 class="h2">Update/Enhancement</h2>
+                                                                <h4 class="h4">ORS</h4>
+                                                                 An award letter will now automatically be sent to a vendor upon MAS contract award.  The contract summary will be attached to the award letter by default as a separate PDF document. 
+                                                                <br />
+                                                                <br />
+                                                                <!--Read the details  Button-->
+                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tr>
+                                                          <td align="center" valign="top">
+                                                              <!-- // CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="   360" class="xemailButton">
+                                                                        <tr>
+                                                                            <td align="center" valign="middle" class="bcrMore">
+                                                                                <a href="http://amsystemssupport.fas.gsa.gov/guides/release-notes/changes.html?q=2016-05-14#80406" target="_blank">Read the details of this change &rarr;</a>
+    
+                                                                            </td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                <!-- // CONTENT TABLE -->
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    <!-- // Button -->
+                                                            </div>
+
+                                                            <div mc:edit="std_content02" class="bcrEven">
+                                                                <h1 class="h1">Expand Report Offices to Use Numeric Characters</h1>
+                                                                <h2 class="h2">Update/Enhancement</h2>
+                                                                <h4 class="h4">FSS Online</h4>
+                                                                The “Report Office” field has been changed from alphabetical to alphanumeric in all systems which use report offices and/or contract numbers. Numbers 0-9 can now be used for future contract activities.
+                                                                <br />
+                                                                <br />
+                                                                <!--Read the details  Button-->
+                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tr>
+                                                          <td align="center" valign="top">
+                                                              <!-- // CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="   360" class="xemailButton">
+                                                                        <tr>
+                                                                            <td align="center" valign="middle" class="bcrMore">
+                                                                                <a href="http://amsystemssupport.fas.gsa.gov/guides/release-notes/changes.html?q=2016-05-14#75715" target="_blank">Read the details of this change &rarr;</a>
+    
+                                                                            </td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                <!-- // CONTENT TABLE -->
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    <!-- // Button -->
+                                                            </div>
+
+                                                            <div mc:edit="std_content03" class="bcrOdd">
+                                                                <h1 class="h1">Allow ACOs Without Signature Authority to Delegate Modifications to ACOs with Signature Authority</h1>
+                                                                <h2 class="h2">Update/Enhancement</h2>
+                                                                <h4 class="h4">FSS Online</h4>
+                                                                If an ACOs does not have signature authority for a modification, FSS Online will prompt them to reassign the mod to an ACO of their choice, rather than the PCO by default. 
+                                                                <br />
+                                                                <br />
+                                                                <!--Read the details  Button-->
+                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                      <tr>
+                                                          <td align="center" valign="top">
+                                                              <!-- // CONTENT TABLE // -->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="   360" class="xemailButton">
+                                                                        <tr>
+                                                                            <td align="center" valign="middle" class="bcrMore">
+                                                                                <a href="http://amsystemssupport.fas.gsa.gov/guides/release-notes/changes.html?q=2016-05-14#78825-2" target="_blank">Read the details of this change &rarr;</a>
+    
+                                                                            </td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                <!-- // CONTENT TABLE -->
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    <!-- // Button -->
+
+                                                            </div> 
+
+                                                            </td>
+                                                    </tr>
+                    
+                                                <!-- // End Module: Standard Content \\ -->
+
+
+                              
+
+                              <!-- // Begin: Final Message \\ -->
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="center" class="finalMessage">
+                                                        These are just the highlights, there are more changes that will impact the way you work with the systems.  
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                              <!-- Button Row ROW // -->
+                              <tr>
+                                          <td align="center" valign="top">
+                                              <!-- CENTERING TABLE // -->
+                                              <table border="0" cellpadding="30" cellspacing="0" width="100%">
+                                                  <tr>
+                                                      <td align="center" valign="top">
+                                                          <!-- // CONTENT TABLE // -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="360" class="emailButton">
+                                                                    <tr>
+                                                                        <td align="center" valign="middle" class="buttonContent shadow">
+                                                                            <a href="http://amsystemssupport.fas.gsa.gov/guides/release-notes/changes.html" target="_blank">SEE THE FULL RELEASE NOTES</a>
+
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </table>
+                                                            <!-- // CONTENT TABLE -->
+                                                            <br />
+                                                            <br />
+                                                    </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // CENTERING TABLE -->
+
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+                                                  <tr>
+                                                      <td valign="top" class="footerContent" mc:edit="footer_content00">
+                                                        <br />
+                                                          <a href="http://amsystemssupport.fas.gsa.gov/" target="_blank">Acquisition Management Systems Support</a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td valign="top" class="footerContent" mc:edit="footer_content01">
+                                                        <br />
+                                                        <strong>Online Help Centers:</strong>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td valign="top" class="footerContent" mc:edit="footer_content02">
+                                                        <a href="http://amsystemssupport.fas.gsa.gov/guides/fss/index.html" target="_blank">FSS Online</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <a href="http://amsystemssupport.fas.gsa.gov/guides/ors/index.html" target="_blank">ORS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <a href="http://amsystemssupport.fas.gsa.gov/guides/sws/index.html" target="_blank">SWS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <a href="http://amsystemssupport.fas.gsa.gov/guides/eoffer/index.html" target="_blank">eOffer/eMod</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        
+                                                      </td>
+                                                  </tr>
+
+
+                                              </table>
+                                              <!-- // END FOOTER -->
+                                                
+    
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr> 
+
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

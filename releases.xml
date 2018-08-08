@@ -1,14 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
 <releases>
-    <release>
-    <date>2015-11-14</date>
+  <release>
+    <date>2018-08-18</date>
     <changes>
       <change>
-        <title><![CDATA[Professional Services Schedule Consolidation]]></title>
+        <title>eMod has a new “Participate in TDR” modtype</title>
+        <number>64902069647</number>
+        <system>eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Participation in the Transactional Data Reporting (TDR) program was changed from mandatory to optional in November of 2017.  Previously, the only way to opt-in to TDR through existing contracts was through the Add SIN and Option modifications. There was no independent functionality to allow vendors to opt-in.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendors, who are on a schedule with TDR participation and are not currently participating, will see the Participate in TDR mod under the Terms and Conditions modtypes.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Transitioning out of the ACES program and making other certificates acceptable in eOffer/eMod</title>
+        <number>14787697416</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>The ACES Certificate Program is discontinued as a means to issue digital certificates to the acquisition community.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>As the ACES Certificate Program is transitioned out, eOffer/eMod will expand its support for other certificate providers. Users who already have an ACES certificate can continue to use their certificates until they expire.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2018-05-10</date>
+    <changes>
+      <change>
+        <title>Opt-in to TDR through eOffer Opt-in Dialogue</title>
+        <number>87527</number>
+        <system>eOffer</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Participation in the Transactional Data Reporting (TDR) program was changed from mandatory to optional in November of 2017. In support of this change, eMod received enhancements in February 2018 to allow users to opt-in to TDR through the Add SIN and Option modifications. eOffer did not have the ability to allow users to opt-in to TDR while submitting an offer.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Offerors should be aware that they will be able to Opt-In to TDR while submitting their offers in eOffer.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Terms and Conditions Mod Process Improvement</title>
+        <number>88655</number>
+        <system>eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[
+            <p>Within eMod, all GSA initiated Terms and Conditions Mods inadvertently required that a vendor edit and submit the mod before the CO/CS could continue completing the mod.  The Options Mod should have been the only mod that required a vendor to make edits and submit before the CO can complete the mod.  Having the additional step for the GSA initiated Terms and Conditions Mod prevented the CO/CS from completing the mod in a timely manner without adding additional unnecessary requirements to the process.</p>
+          ]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Of the GSA initiated mods, a vendor will only have to edit and submit the Options Mod.  For all other GSA Initiated mods, the vendor will only be required to sign the final SF 30 and mod package.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Speed Issues Addressed in eOffer/eMod</title>
+        <number>84179</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Vendors will find that eOffer/eMod has been updated to address issues with speed, especially when uploading files and accessing the system between the hours of 9AM to 2PM. The system has been modified and tested to address these issues and now offers a better user experience for offerors to move between pages, upload files, and navigate sections of the system.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendors will now be able to move between pages, upload files, and navigate sections of the system much easier.</p>
+          ]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>Update SubK processes for compliance with FAR Case 2014-003</title>
+        <number>87246</number>
+        <system>eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[
+            <p>FAR Case 2014-003 changed the contracting rules related to the use of SubK plans in contracts, and these changes needed to be reflected in the acquisition systems. A small business is not required to have a SubK plan while a large business is. When a business would re-represent its business size, COs/CSs would manually have to ensure the business was compliant with SubK Plan requirements.</p>
+            <p>For more information on the SubK rule changes, view the Summary on the <a href="FederalRegister.gov">FederalRegister.gov</a>.</p>
+          ]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>After a vendor submits and receives approval for a Re-representation of Business Size modification, they will automatically receive a modification to incorporate or terminate a subcontracting plan depending on the business size change.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2018-02-17</date>
+    <changes>
+      <change>
+        <title>Opt-in to TDR</title>
+        <number>9571061751484</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Participation in the Transactional Data Reporting (TDR) program was changed from mandatory to optional in November of 2017. In support of this change, eMod has been enhanced to make the Opt-In process easier.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendors should be aware that they will be able to Opt-In to TDR more easily through the TDR Opt-In dialog in eMod. The modification and option workflows will receive their enhancements first. Enhancements to offers will appear in future releases.</p>
+            <p>The following specific enhancements will appear in this release:</p>
+            <ul>
+              <li><p><strong>Add SIN TDR Opt-In</strong><br/>When executing an Add SIN modification on a TDR schedule, vendors will be presented with the ability to opt-in to TDR.</p></li>
+              <li><p><strong>Option TDR Opt-In</strong><br/>When executing an Option modification on a TDR schedule, vendors will be presented with the ability to opt-in to TDR.</p></li>
+            </ul>
+            <p>In both cases, a prompt like the following will be shown:</p>
+          ]]></description>
+          <images>
+            <image>
+              <url>screenshots/021718/BCR87527_001.jpg</url>
+              <caption><![CDATA[Users will be presented with the TDR Opt-In dialog on the Add SIN and Option Modifications.]]></caption>
+              <alternateText><![CDATA[Users will be presented with the TDR Opt-In dialog on the Add SIN and Option Modifications.]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Show the FSS Online Mod Number in eMod</title>
+        <number>0733719506843</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>eMod references modifications with an "eMod ID" (ex. 86KE9VI7), while FSS Online references modifications with a "mod number" (ex. PS-0053).  This discrepancy made it challenging for vendors to identify mods with their COs.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Be aware that eMod will now display the FSS Online mod number in a new Mod No. column on the eMod inbox page.  Note the FSS Online mod number is only generated upon submission and will display Pending until the mod has been submitted. Use this mod number to identify mods to your CO.</p>
+          ]]></description>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2017-11-18</date>
+    <changes>
+      <change>
+        <title>Updates to the eOffer/eMod User Interface (UI)</title>
+        <number>71784</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>eOffer/eMod has been receiving user interfaces updates through both Section 508 system updates and features implemented in support of the Formatted Pricing Tool (FPT).  Older screens within eOffer/eMod no longer match the newer visual style.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>eOffer/eMod will now receive an updated look and feel that is consistent throughout both applications.  While the screens have been updated, the functionality remains the same.</p>
+            <p>The <a href="https://eoffer.gsa.gov/AMSupport/index.html">eOffer/eMod Help Center</a> will be updated in the coming months.</p>
+          ]]></description>
+        </effect>
+      </change>
+      <change>
+        <title>Phasing out the American Recovery and Reinvestment Act (ARRA)</title>
+        <number>71784</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>The American Recovery and Reinvestment Act (ARRA) has come to an end and is no longer applicable to solicitations.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that the ARRA mod is no longer offered as a Terms and Conditions modification on eMod, and the Standard Responses question relating to ARRA is being phased out of eOffer.</p>]]></description>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2017-08-18</date>
+    <changes>
+      <change>
+        <title>UX/UI Improvements to eOffer/eMod</title>
+        <number>0</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>The Office of Customer Experience conducted user experience testing with eOffer/eMod and identified opportunities to improve usability.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs/CSs should be aware that the user experience of eOffer/eMod has been improved.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Contract Files Will Indicate If a Document Is Part of the Award Package in ECMS</title>
+        <number>1</number>
+        <system>ECMS/eViewer</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>The list of documents within a Contract File did not indicate whether a document was a part of the Award Package.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>COs/CSs should be aware of the new column within ECMS to indicate whether a document is a part of the Award Package. To enable the new column, users should:</p>
+            <ol>
+              <li>Access the submenu Document List</li>
+              <li>Access the "columns" menu</li>
+              <li>Select "Document" from the drop-down menu</li>
+              <li>Select the appropriate column and use the arrow to add it to their Document Lists</li>
+            </ol>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>FSS Online Option Date Reports for BPAs with Non-MAS Parent Contracts</title>
+        <number>2</number>
+        <system>FSS Online</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>Previously options awarded to BPAs with non-MAS parent contracts were complicated because of misaligned end dates. The rules were altered to allow greater visibility in and flexibility to ensure COs could manage and exercise options for  these BPAs. In July 2017, COs were given the ability to enter Options date information for non-MAS contracts within FSS Online.  This information about Option dates was not accessible through running reports.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs can now run reports in FSS Online to view beginning and end dates for BPAs and their non-MAS parent contracts.   Note that the report will return all contracts that have active time within the report period, even if the begin date is prior to the report period.</p>]]></description>
+          <images>
+            <image>
+              <url>screenshots/081617/BCR67240_002.jpg</url>
+              <caption><![CDATA[The Option Date Report.]]></caption>
+              <alternateText><![CDATA[The Option Date Report.]]></alternateText>
+            </image>
+            <image>
+              <url>screenshots/081617/BCR67240_003.jpg</url>
+              <caption><![CDATA[How to access the Option Date Report.]]></caption>
+              <alternateText><![CDATA[How to access the Option Date Report.]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Test Site for Training on FSS Online for Designated Trainers</title>
+        <number>3</number>
+        <system>FSS Online</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>Users have been requesting a more flexible representative environment in which to conduct training.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>COs/CSs should be aware that the designated trainer within each group can provide access to the FSS Online demo environment. Seek out your designated trainer if you wish to explore the test environment.</p>
+            <p>COs/CSs should also note that although currently only the test site for FSS Online is live, other systems will be added in the future.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>eLibrary Can Display Contact Information from the Contract Master File Instead of the Vendor Master File</title>
+        <number>4</number>
+        <system>CSM WS</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+         <description><![CDATA[<p>Previously eLibrary displayed contract email and url’s based off what was found in a vendor’s DUNS.  If a vendor has multiple contracts, the contact information was still drawn from the DUNS and not the Contract Master File. This lead to complications as the actual points of contact were different from the listed contacts.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>COs/CSs should be aware that eLibrary is now able to show different contract specific contact email addresses and URLs across different contracts from the same vendor.</p>]]></description>
+          <images>
+            <image>
+              <url>screenshots/081617/BCR90384_001.jpg</url>
+              <caption><![CDATA[The eLibrary interface. Click the “Vendor” tab to display vendor information, including contact information.]]></caption>
+              <alternateText><![CDATA[The eLibrary interface. Click the “Vendor” tab to display vendor information, including contact information.]]></alternateText>
+            </image>
+            <image>
+              <url>screenshots/081617/BCR90384_002.jpg</url>
+              <caption><![CDATA[Click the “Correction” button to make edits to contract-specific information.]]></caption>
+              <alternateText><![CDATA[Click the “Correction” button to make edits to contract-specific information.]]></alternateText>
+            </image>
+            <image>
+              <url>screenshots/081617/BCR90384_003.jpg</url>
+              <caption><![CDATA[The eMail and URL fields above may be used to make contract-specific edits. The lower half of the screen shows DUNS-related contact information.]]></caption>
+              <alternateText><![CDATA[The eMail and URL fields above may be used to make contract-specific edits. The lower half of the screen shows DUNS-related contact information.]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Ensure that Downloaded Files Retain Their Original Filenames in FSS Online</title>
+        <number>5</number>
+        <system>FSS Online</system>
+        <type>System Fixes</type>
+        <motivation>
+         <description><![CDATA[<p>Previous when downloading documents from a contract file in FSS Online, the file names were lost upon download. A previous fix worked for PDF documents but was inconsistent with Microsoft formats.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that filenames will be preserved when downloading documents from FSS Online.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2017-05-20</date>
+    <changes>
+      <change>
+        <title>Allow the CO/CS to Attach Option Mod Documents Via FSS Online</title>
+        <number>0</number>
+        <system>FSS Online</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>Previously, COs/CSs were unable to attach option documents via FSS Online and process the award of the option modification.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that COs/CSs can create an option mod for vendors to then add attachments in eMod. The CO/CS can also receive attachments outside of eMod from the vendor and attach them through FSS Online, and then submit the modification unilaterally.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Authorized Negotiators May Now Access Work in Progress and Contract History</title>
+        <number>1</number>
+        <system>eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>When a new Authorized Negotiator was added to a contract, they were not able to access all previous modifications or any work-in-progress mods.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that all current and future negotiators have the ability to access contract history and any work-in-progress modifications.</p>]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
+    <date>2017-02-18</date>
+    <changes>
+      <change>
+        <title>Updates to Formatted Products Tool (FPT) for Schedules 58I and 72 Only</title>
+        <number>0</number>
+        <system>eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>A process was required to give vendors the capability to comment on standardized XSB data and note when they wanted to keep the original information.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that vendors can now add comments if they do not agree with the standardized XSB data returned while processing an &ldquo;Add Product,&rdquo; &ldquo;Add SIN,&rdquo; or &ldquo;Capture Formatted Pricing&rdquo; modification. The CO can either agree or disagree with the vendor’s request.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+    </changes>
+  </release> 
+  <release>
+    <date>2016-08-20</date>
+    <changes>
+      <change>
+        <title>Technical Proposal Required for Add SIN Mod Type</title>
+        <number>0</number>
+        <system>eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>The addition of a new SIN may impact aspects of the technical proposal. The recently implemented on-screen technical proposal interface was initially deployed as part of the offer process only. This functionality is being expanded to apply to “Add SIN” modifications.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Vendors are now required to enter a technical proposal via the on-screen entry as part of submitting an “Add SIN” modification. If you submitted a technical proposal as part of your offer, then the content you submitted will be prepopulated and presented for your review.  If you did not submit a technical proposal as part of your offer, then you will need to address the required elements as part of completing the modification.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Industrial Funding Fee (IFF) POC Field</title>
+        <number>1</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>Previously, the Industrial Funding Fee Point of Contact (IFF POC) was only required for offerors completing a subcontracting plan.  </p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that the <em>Industrial Funding Fee POC</em> is now a mandatory POC for all offers, and that multiple entries are permitted. Existing vendors can manage this Point of Contact through a new modification time being introduced.</p>
+          <p>For existing contract holders, this POC will be pre-populated with the information of the person listed as the 72A POC;. You will need to validate and/or update this information if you wish to designate a different individual. In addition, these new POCs may need their own digital certificates in order to access eOffer/eMod.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>New Formatted Product Tool Process</title>
+        <number>2</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>The Formatted Product Tool introduces a new, more comprehensive interface for offerors and existing contract holders to input data about their products. The process will allow for additional review and validation, resulting in cleaner and more accurate product data across the schedules program.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>The Formatted Product Tool will be rolled out to select schedules over the course of the next few months. If you are have a contract under a participating schedule, you will receive a mass mod for that contract. Upon accepting the mass mod, you will have access to the new process, and will be able to enter detailed pricing information for each of your products and accessories, including discounts, warranties, delivery options, and more. The tool also streamlines multiple sections of eOffer/eMod.</p>
+          <p>You will find both interactive training and step-by-step instructions on the Formatted Product Tool in the <a href="">eOffer/eMod User Guide</a>.</p>
+          <p>For the most up to date information about the Formatted Product Tool rollout, please visit the MAS Interact group located at: <a href="https://interact.gsa.gov/groups/multiple-award-schedules">https://interact.gsa.gov/groups/multiple-award-schedules</a>.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>       
+    </changes>
+  </release>  
+  <release>
+    <date>2016-02-13</date>
+    <changes>
+      <change>
+        <title>Capture the Vendor Response(s) for Each Clause in Offers and in Mods</title>
         <number>0</number>
         <system>eOffer/eMod</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>To ease procurement of professional services, all professional service schedules have been consolidated under the new Professional Services Schedule on October 1st.  The following GSA schedules have been consolidated into the new Professional Services Schedule on October 1st:</p><ul><li>MOBIS Schedule 874</li><li>PES Schedule 871</li><li>FABS Schedule 520</li><li>AIMS Schedule 541</li><li>LOGWORLD Schedule 874 V</li><li>Environmental Schedule 899</li><li>Language Schedule 738 II</li></ul>]]></description>
+          <description><![CDATA[<p>Previously, the <em>Solicitation Clauses</em> section of eOffer/eMod only consisted of one screen that captured a limited amount of data. That section has been updated with new functionality for more detailed responding, which is tailored to your schedule, so that your offer will be managed more intelligently.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Visit the new <em>Responding to Solicitation Clauses</em> section of the updated eOffer/eMod user guides.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Mass Mod for PSS</title>
+        <number>1</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>The Professional Service Schedule was added on October 1, 2015. This schedule was being populated with C SINs rather than the correct non-C equivalent.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Be aware that you will no longer see the C SINs, but only their non-C equivalent.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>
+      <change>
+        <title>Streamlined Offers and Configurable Year Thresholds</title>
+        <number>2</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>The number of MAS contractors coming up on their 20-year maximum contract lifespans will increase rapidly over the next few years. Policy and Administration wanted to streamline the offer process for contractors who have had a successful contract period, by exempting repeat “legacy” contractors from some of the requirements associated with submitting a new MAS offer.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[<p>Qualified contractors will be able to submit an offer without the Pathways to Success Training, the Readiness Assessment, and certain sections of the Technical proposal.</p>]]></description>
+          <images>            
+          </images>
+        </effect>
+      </change>       
+    </changes>
+  </release>
+  <release>
+    <date>2015-11-14</date>
+    <changes>
+      <change>
+        <title>Professional Services Schedule Consolidation</title>
+        <number>0</number>
+        <system>eOffer/eMod</system>
+        <type>Update/Enhancement</type>
+        <motivation>
+          <description><![CDATA[<p>To ease procurement of professional services, all professional service schedules have been consolidated under the new Professional Services Schedule on October 1st. The following GSA schedules have been consolidated into the new Professional Services Schedule on October 1st:</p><ul><li>MOBIS Schedule 874</li><li>PES Schedule 871</li><li>FABS Schedule 520</li><li>AIMS Schedule 541</li><li>LOGWORLD Schedule 874 V</li><li>Environmental Schedule 899</li><li>Language Schedule 738 II</li></ul>]]></description>
         </motivation>
         <effect>
           <description><![CDATA[<p>Since the changes have taken place on October 1st, no action is needed by vendors since the change will be managed via a unilateral MassMod.</p><p>You can learn more about the Professional Services Schedule (PSS) on the <a href="https://interact.gsa.gov/groups/professionalservicescategory">Professional Service Category Community</a> on <a href="https://interact.gsa.gov/">Interact</a> or the PSS portal page, <a href="http://www.gsa.gov/portal/content/200063">Professional Service Schedule</a>.</p>]]></description>
@@ -17,12 +468,12 @@
         </effect>
       </change>
       <change>
-        <title><![CDATA[Updated &ldquo;Help&rdquo; Links Throughout eOffer/eMod]]></title>
+        <title>Updated Help Links Throughout eOffer/eMod</title>
         <number>1</number>
         <system>eMod</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>A new improved help center has been developed to assist users with eOffer/eMod.  The links throughout eOffer/eMod have been updated to remove old help content and send users to the new site.  </p>]]></description>
+          <description><![CDATA[<p>A new improved help center has been developed to assist users with eOffer/eMod.  The links throughout eOffer/eMod have been updated to remove old help content and send users to the new site.</p>]]></description>
         </motivation>
         <effect>
           <description><![CDATA[<p>View the new <a href="http://eoffer.gsa.gov/AMSupport/index.html">eOffer/eMod Help Center</a>.</p>]]></description>
@@ -31,23 +482,22 @@
         </effect>
       </change>
       <change>
-        <title><![CDATA[SIN Deletions Now Go Into Effect Immediately]]></title>
+        <title>Duplicate Manufacturer Part Number Enhancement</title>
         <number>2</number>
-        <system>eMod</system>
+        <system>Advantage</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>Due to a policy change, a Delete SIN modification will go into effect immediately.</p>]]></description>
+          <description><![CDATA[<p>As of November 23, 2015, contractors can upload duplicate Manufacturer Part Numbers (MPNs) to GSA Advantage.  This enhancement will eliminate the need to manipulate the MPN when a contractor has items from multiple manufacturers that use the same MPN.</p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>Vendors should be aware that Delete SIN modifications are effective immediately. 
-</p>]]></description>
+          <description><![CDATA[<p>Contract holders should take this opportunity to review and update their price lists for both accuracy and completeness.  Any altered Manufacturer Part Numbers should be updated so as to be identical to the numbers issued by the manufacturer.</p><p>Per clauses I-FSS-600 Contract Price Lists and 552.238-71 (Submission and Distribution of Authorized FSS Schedule Price Lists), price lists must be complete, and include all supplies, prices, and terms and conditions awarded under a contractor’s FSS contract. A complete price list means that all awarded base products are listed along with all associated descriptive data (to include MPN).</p><p>Going forward you should ensure that correct manufacturer part numbers are submitted for all products in your price list.</p>]]></description>
           <images>            
           </images>
         </effect>
-      </change>
+      </change>       
     </changes>
   </release>
-    <release>
+  <release>
     <date>2015-08-08</date>
     <changes>
       <change>
@@ -78,7 +528,7 @@
           <description><![CDATA[<p>As a part of the eOffer, vendors have to submit a technical proposal, covering topics such as corporate experience, past performance, and quality control.  Prior to this update, vendors would have to compile this information in a separate document, and attach it to their offers.</p><p>GSA took the opportunity to standardize and streamline the process across the MAS program by creating electronic forms within the eOffer system.  This new robust format allows for increased simplicity, while preserving the commodity-specific elements of certain schedules/SINs.</p>]]></description>
         </motivation>
         <effect>
-          <description><![CDATA[<p>During the course of 2015, each solicitation in eOffer will include a new section, titled  &ldquo;solicitations provisions&rdquo;.  In this section, offerors will address provisions specific to each solicitation, and provide written detail about their corporate experience, past performance, and quality control.</p><p>Requirements of each section of the provisions are listed with the corresponding text entry boxes.  This ensures consistency and completeness from the vendors.  You must respond to all provisions listed in the table, before you may submit your offer.</p><p>The result is a more user-friendly system and standardized eOffer that Contracting Officers can process more efficiently. </p><p>More information on the Solicitation Provisions process can be found in the <em>eOffer Help Center</em>.</p>]]></description>
+          <description><![CDATA[<p>During the course of 2015, each solicitation in eOffer will include a new section, titled  &ldquo;solicitations provisions&rdquo;.  In this section, offerors will address provisions specific to each solicitation, and provide written detail about their corporate experience, past performance, and quality control.</p><p>Requirements of each section of the provisions are listed with the corresponding text entry boxes. This ensures consistency and completeness from the vendors. You must respond to all provisions listed in the table, before you may submit your offer.</p><p>The result is a more user-friendly system and standardized eOffer that Contracting Officers can process more efficiently. </p><p>More information on the Solicitation Provisions process can be found in the <em>eOffer Help Center</em>.</p>]]></description>
           <images>
             <image>
               <url>screenshots/1505/BCR57864_01.jpg</url>
@@ -94,10 +544,10 @@
         <system>eMod</system>
         <type>Update/Enhancement</type>
         <motivation>
-          <description><![CDATA[<p>In the past, vendors submitting temporary or permanent price reduction modifications would need to wait for the Contracting Officer to approve the  modification before the modification took effect.  In order to better suit the needs of industry, the process needed to be streamlined.  Therefore, it was decided that price reduction modifications would be effective immediately upon submission.</p>]]></description>          
+          <description><![CDATA[<p>In the past, vendors submitting temporary or permanent price reduction modifications would need to wait for the Contracting Officer to approve the  modification before the modification took effect. In order to better suit the needs of industry, the process needed to be streamlined.  Therefore, it was decided that price reduction modifications would be effective immediately upon submission.</p>]]></description>          
         </motivation>
         <effect>
-          <description><![CDATA[<p>The following modifications will automatically receive an effective date that is identical to the date of submission:</p><ul><li>Temporary Price Reduction</li><li>Permanent Price Reduction (based on Most Favored Customer)</li><li>Permanent Price Reduction (Industry Partner Request)</li></ul><p>In submitting these modifications, you are now required to agree to the following statements:</p><ul><li>This modification is allowed ONLY to reflect price reductions to be applied to the awarded items under my Multiple Award Schedule contract.  No other changes can be included, and all other contract terms and conditions remain in full effect.</li><li>Submitted price reduction modifications are effective immediately upon submission.</li><li>I must update my Authorized Federal Supply Schedule Price List as soon as possible to reflect the price reductions described herein.</li></ul><p>Please note, you will still need to submit your price change via SIP/EDI in order for the change to be reflected on Advantage.</p>]]></description>
+          <description><![CDATA[<p>The following modifications will automatically receive an effective date that is identical to the date of submission:</p><ul><li>Temporary Price Reduction</li><li>Permanent Price Reduction (based on Most Favored Customer)</li><li>Permanent Price Reduction (Industry Partner Request)</li></ul><p>In submitting these modifications, you are now required to agree to the following statements:</p><ul><li>This modification is allowed ONLY to reflect price reductions to be applied to the awarded items under my Multiple Award Schedule contract. No other changes can be included, and all other contract terms and conditions remain in full effect.</li><li>Submitted price reduction modifications are effective immediately upon submission.</li><li>I must update my Authorized Federal Supply Schedule Price List as soon as possible to reflect the price reductions described herein.</li></ul><p>Please note, you will still need to submit your price change via SIP/EDI in order for the change to be reflected on Advantage.</p>]]></description>
           <images>
             <image>
               <url>screenshots/1505/BCR69361_01.jpg</url>
