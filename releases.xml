@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
   <release>
+    <date>2018-11-17</date>
+    <changes>
+      <change>
+        <title>Formatted Product Tool (FPT) Rollback</title>
+        <number>Formatted Product Tool (FPT) Rollback</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>GSA has decided to roll back the Formatted Product Tool (FPT) program.  FPT is not a separate application; it is a systems upgrade that was activated within the existing eOffer and eMod platforms for schedules 58I, 66, and 72.  FPT allowed vendors to enter product information directly into eOffer and eMod instead of using the Schedule Input Program (SIP).</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendors will simply return to the two-step process of sending a spreadsheet to the CO for price approval and separate data load via SIP for publication to GSA Advantage.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+      <change>
+        <title>Change “Re-representation of Business Size” from RAM to bilateral mod</title>
+        <number>14787697416</number>
+        <system>eOffer/eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Previously the “Re-representation of Business Size” modification was a Rapid Action Modification (RAM), meaning the mod did not require a vendor’s signature.  Input from Office of Policy Compliance (OPC) and stakeholders indicated that was incorrect and this modification type would need to be changed to a bilateral mod.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Be aware that vendor’s will need to sign “Re-representation of Business Size” modifications.</p>
+          ]]></description>
+          <images></images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
     <date>2018-08-18</date>
     <changes>
       <change>
