@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
   <release>
+    <date>2019-02-16</date>
+    <changes>
+      <change>
+        <title>Vendors should treat Base Year Subcontracting Goals as Current Year Subcontracting Goals</title>
+        <number>190201</number>
+        <system>eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>A vendor may need to add a Subcontracting Plan to their contract after having not having a plan in their base year. If a vendor is adding a subcontracting plan beyond their base period of performance, they may find themselves confused when filling out the Goals section of the subcontract plan.</p></p>While a vendor may not actually have any subcontracting activity in their Base Year, eMod requires the Base Year Goals section to be filled out and will not accept an entry of $0.00. As a workaround, the vendor should instead treat the Base Year as the current year and enter their current year subcontracting goals.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendor’s entering Subcontracting Goals after their base year should treat the Base Year Goals section as current year goals. </p>
+          ]]></description>
+          <images>
+            <image>
+              <url>screenshots/1902/DYK201902_001.jpg</url>
+              <caption><![CDATA[Vendor’s should treat the Base Year Subcontracting Goals as Current Year Subcontracting Goals. Entering 0 dollars within Base Year Subcontracting Goals will produce an error. ]]></caption>
+              <alternateText><![CDATA[Vendor’s should treat the Base Year Subcontracting Goals as Current Year Subcontracting Goals. Entering 0 dollars within Base Year Subcontracting Goals will produce an error. ]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+    </changes>
+  </release>
+  <release>
     <date>2018-11-17</date>
     <changes>
       <change>
