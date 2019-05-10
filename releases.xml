@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
+    <release>
+    <date>2019-05-11</date>
+    <changes>
+      <change>
+        <title>The FASt Lane program is being rolled out to eMod in Schedule 70</title>
+        <number>190501</number>
+        <system>eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>The FASt Lane program is a way for eOffers and eMods to be more rapidly processed.  FASt Lane currently exists in eOffer and is now being integrated into eMod on Schedule 70.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Vendors should be aware of the new addition of the FASt Lane program to the eMod side of eOffer/eMod on Schedule 70.  Vendors should also be aware that they are able to submit eMods under the FASt Lane track if their contract is FASt Lane approved or the modification meets certain criteria.</p>
+            <p>The following types of eMods are eligible for FASt Lane consideration:
+              <p>
+                <ul>
+                  <li>Addition Modifications</li>
+                  <li>Deletion Modifications</li>
+                  <li>Pricing Modifications  
+                    <ul>
+                      <li>Temporary Price Reduction</li>
+                      <li>Economic Price Adjustment</li>
+                      <li>Permanent Price Reduction</li>
+                    </ul>
+                  </li>
+                  <li>Technical Modifications</li>
+                  <li>Terms and Conditions Modifications
+                    <ul>
+                      <li>Cooperative Purchasing</li>
+                      <li>e-Verify</li>
+                      <li>Re-representation of Non-novated Merger</li>
+                      <li>Re-representation of Business Size</li>
+                      <li>Revise Terms and Conditions</li>
+                    </ul>
+                  </li>
+                </ul>
+              </p>
+              <p>Information on how to take advantage of the FASt Lane Program will be added to the eOffer/eMod Help Center in future updates.</p>
+            </p>
+            <p>For more information, see the FASt Lane section on the FASt Lane GSA page.</p>
+          ]]></description>
+          <images>
+            <image>
+              <url>screenshots/1905/BCR99783_001.jpg</url>
+              <caption><![CDATA[FASt Lane option for an eMod that is FASt Lane eligible]]></caption>
+              <alternateText><![CDATA[FASt Lane option for an eMod that is FASt Lane eligible]]></alternateText>
+            </image>
+          </images>
+        </effect>
+      </change>
+    </changes>
+  </release>
   <release>
     <date>2019-02-16</date>
     <changes>
