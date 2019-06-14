@@ -147,7 +147,7 @@ function releasesToHTML (releases) {
           changeElement
             .append ($('<div></div>').addClass ('screenshotContainer')
               .append ($('<div></div>').addClass ('screenshotBox')
-              .append ($('<a></a>').addClass ('fancybox').attr ('href', image.url).attr ('title', '')
+              .append ($('<a></a>').addClass ('screenshot').attr ('href', image.url).attr ('title', '')
                 .append ($('<img></img>').addClass ('screenshot').attr ('src', image.url).attr ('alt', image.alternateText)))
               .append ($('<div></div>').addClass ('screenshotText')
                 .append ($('<p></p>').addClass ('figCaption').text (image.caption))
@@ -166,7 +166,7 @@ function releasesToHTML (releases) {
           changeElement
             .append ($('<div></div>').addClass ('screenshotContainer')
               .append ($('<div></div>').addClass ('screenshotBox')
-              .append ($('<a></a>').addClass ('fancybox').attr ('href', image.url).attr ('title', '')
+              .append ($('<a></a>').addClass ('screenshot').attr ('href', image.url).attr ('title', '')
                 .append ($('<img></img>').addClass ('screenshot').attr ('src', image.url).attr ('alt', image.alternateText)))
               .append ($('<div></div>').addClass ('screenshotText')
                 .append ($('<p></p>').addClass ('figCaption').text (image.caption))
