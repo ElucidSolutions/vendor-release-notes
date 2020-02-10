@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <releases>
+  <release>
+    <date>2020-02-08</date>
+    <changes>
+      <change>
+        <title>Add SIN and Delete SIN are on hold for eMod</title>
+        <number>200201</number>
+        <system>eMod</system>
+        <type>Updates and Enhancements</type>
+        <motivation>
+          <description><![CDATA[<p>Due to MAS Consolidation Phase 2 and the way one of the GSA systems is approving previously submitted items, the functionality for Add SIN and Delete SIN modifications will be temporarily removed from eMod.  This is to help with the flow of updates the systems will be undergoing, and prevent new modifications from being added to the set list of accepted modifications.  The ability to submit Add SIN and Delete SIN modifications will be reinstated March 14, 2020 and business may proceed as usual.</p>]]></description>
+        </motivation>
+        <effect>
+          <description><![CDATA[
+            <p>Be aware that from now, until March 14, 2020, Add SIN and Delete SIN modifications will not be accessible or able to be submitted.  This is to allow for MAS Consolidation Phase 2 to be completed in a timely manner with the already submitted modifications, and not add more to that list.</p>
+          ]]></description>
+          <images>
+<!--            <image>
+              <url>screenshots/1905/BCR99783_001.jpg</url>
+              <caption><![CDATA[FASt Lane option for an eMod that is FASt Lane eligible]]></caption>
+              <alternateText><![CDATA[FASt Lane option for an eMod that is FASt Lane eligible]]></alternateText>
+            </image>
+-->
+          </images>
+        </effect>
+      </change>
+    </changes>
+  </release>
     <release>
     <date>2019-05-11</date>
     <changes>
